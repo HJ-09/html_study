@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>요소의 속성</title> <!--title은 -->
+</head>
+<body>
+    <h1>요소 속성 정의법</h1>
+    <p>요소의 속성은 노드개체의 상태를 바꾼다.</p>
+    <p>노드개체 → 요소가 브라우저에 출력된 상태(객체)를 얘기함. 이벤트 리스너가 정의됨</p>
+    <h2>input 요소의 type 속성</h2>
+    <p>type, name, value는 input 요소만 사용하는 속성</p>
+    <ul>
+        <li><input> type의 기본값은 text</li> <!--처음부터 지정된 값(기본값) : default-->
+        <li><input type="text" value="안녕하세요"></li>
+        <li><input type="button" value="버튼입니다"></li>
+        <li><button>버튼입니다.</button></li> <!--개발자들은 이 타입의 버튼을 더 선호함.-->
+        <li>
+            <input type="checkbox">
+            <input type="checkbox" checked>
+            <!--<input type="checkbox" checked="checked">-->
+            <!-- └─ checked 속성 자체가 true 값(없으면 false)을 가지기 때문에 옳지 않은 문법임.-->
+        </li>
+        <li>
+            소설읽기 <input type="checkbox" name="hobby" value="소설읽기">
+            웹툰보기 <input type="checkbox" name="hobby" value="웹툰보기">
+            만화보기 <input type="checkbox" name="hobby" value="만화보기">
+            <!--복수선택 가능-->
+
+        </li>
+        <li>
+            <!--<input type="radio">--> <!--radio는 선택을 강요하는거여서 선택하면 취소가 안됨-->
+            남자 <input type="radio" name="gender" value="male"> <!-- 그런데 이렇게 이름이 같은게 있을 때 둘 중 하나 선택 가능 -->
+            여자 <input type="radio" name="gender" value="female">
+        </li>
+    </ul>
+    <h2>공통 속성</h2>
+    <p>id, class, data-*, style, title, hidden</p>
+    <ul>
+        <li class="red">id : html 문서에서 유일한 요소를 지정할 때 사용</li>
+        <li class="red">class : 복수의 이름을 지정</li>
+        <li data-color="red">data-* : 사용자 지정 속성</li>
+        <li data-color="white" style="color:yellowgreen"> style : 요소에 그래픽을 지정</li>
+        <li title="툴팁입니당"> title : 툴팁제공</li>
+        <li> hidden : 보이지 않게 합니다.</li> <!-- checked처럼 있는 것 자체가 true-->
+    </ul>
+    <h2>리소스를 참조하는 속성</h2>
+    <p>href(Hypertext REFerence), src(reSouRCe)</p>
+    <ul>
+        <li>
+            <a href="./L02BlockInlineElement.html"> 상대주소로 이동 </a> <!--(내 위치 기준으로 다른 곳으로 이동하겠다)-->
+        </li>
+        <li>
+            <a href="https://naver.com"> 절대주소로 이동 </a> <!--(완전히 다른 곳으로 가는 거라서 내 위치와 상관없음)-->
+        </li>
+        <li>
+            <img src="./src/img/아기고양이.jpg" width="100" alt="귀여운 회색 아기고양이"> <!--alt는 시각장애인 분들을 위해 읽어주는 봇-->
+            <img src="./src/img/아기고양이.jpg" style="width: 100px"> <!--style로 하는게 좀 더 좋은 방법-->
+        </li>
+    </ul>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
