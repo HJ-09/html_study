@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>컨텐츠인 인라인 요소</title>
+</head>
+<style>
+    .red{
+        display: inline;
+        /*너비높이를 지정할 수 없다(컨텐츠 자체가 너비높이임).(=box모델(block)에 포함되지 않는다)*/
+        /*margin은 좌우만 된다. why? line 높이와 충돌이 있어서!*/
+        color: gray;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border: 1px solid blueviolet;
+        background-color: wheat;
+    }
+    .link{
+        text-decoration: none;
+    }
+    .cat{
+        width: 100px;
+        height: 90px;
+        object-fit: cover; /*이미지를 너비높이에 맞게 변형하지 않음*/
+
+        border: 1px solid silver;
+        padding: 5px;
+        margin: 5px;
+    }
+</style>
+<body>
+    <h1>컨텐츠(text)를 전의하는 인라인 요소</h1>
+    <ul>
+        <li>
+            span <span class="red">스팬태그</span> : 문자를 분리하는 용도. 스타일 없음.
+        </li>
+        <li>
+            <a class="link" href="https://naver.com"> 네이버</a> <!--밑줄 기본. 방문한 기록이 있으면 보라색, 없으면 파란색-->
+        </li>
+        <li>
+            <b>굵게</b> b : 텍스트를 굵게 구현
+        </li>
+        <li>
+            <strong>굵게+강조(semantic)</strong>
+        </li>
+        <li>
+            <i>기울이기</i>
+        </li>
+        <li>
+            <em>기울이기+강조(semantic)</em>
+        </li>
+        <li>
+            <mark>형광마크</mark>
+        </li>
+        <li>
+            <big>크게~?</big> → 곧 없어질지도...~
+        </li>
+        <li>
+            <small>작게</small>
+        </li>
+        <li>
+            안녕<sup>위</sup>, 하이<sub>아래</sub>, 2<sup>2</sup> → 주석달기
+        </li>
+        <li>
+            <address>주소입력(+semantic)</address> : 이메일이나 사람의 이름같은 고유명사?에 쓰나봄
+        </li>
+        <li>
+            <code>System.out.println()</code>
+            프로그램 코드작성(번역x)
+        </li>
+        <li>
+            <pre>
+                안녕!
+                경민이야
+            </pre> pre : 공백과 라인개행을 출력
+        </li>
+    </ul>
+<h2>인라인인데 블럭(box model)요소(display:inline-block)</h2>
+    <ul>
+        <li> 이미지 :
+            <img class="cat" src="./src/img/아기고양이.jpg">
+        </li>
+        <li>
+            <input type="text">
+            <input type="checkbox" name="" id="">
+            <input type="range" name="" id="">
+            <input type="button">
+            <select><option>1</option></select>
+        </li>
+        <li>
+            <textarea></textarea>
+        </li>
+    </ul>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

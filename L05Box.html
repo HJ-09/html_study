@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델</title>
+</head>
+<style>
+    div.box {
+        display: block; /*설정 안 해도 기본 ...맞음?*/
+        background-color: #13eac2;
+        /*height: auto;*/ /*auto : 컨텐츠가 블럭의 높이를 결정한다. 왜? 브라우저가 스크롤로 ui를 제공하기 때문에*/
+        /*width: 100%;*/ /*브라우저 너비 기분 100%*/
+    }
+    .square{ /*③*/
+        /*box-sizing: content-box;*/ /*기본 설정 값*/
+        box-sizing: border-box; /*border 크기만큼 width, height 변경*/
+        width: 200px; /*컨텐츠 크기*/
+        height: 200px; /*컨텐츠 크기*/
+        /*overflow: visible; ← 이게 기본 속성(컨텐츠가 밖으로 나옴)*/
+        /*overflow: hidden; ← 높이고정된 블럭 밖의 컨텐츠 숨기기*/
+        overflow: scroll; /*← 블럭에 스크롤 생성*/
+        /*border-width: 5px;
+        border-color: #dd1e7f;
+        border-style: solid; /*width, height 포함 x ..?*/
+        /*단축 표기법(shorthand)*/
+        border: 4px #dd1e7f dashed;
+        /*padding-right: 10px;
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-bottom: 40px;*/
+        /*padding: 30px 20px 10px 10px; top right bottom left 순서*/
+        /*padding: 100px 70px; top+bottom right+left*/
+        padding: 10px; /*4면 모두 동일하게*/
+        margin: 20px auto;
+        /*사이즈(w,h)가 있는 block의 중간 정렬은 좌우여백을 auto로 주면 됨*/
+    }
+
+</style>
+
+<body>
+    <h1>블럭의 박스 모델을 확인하자</h1>
+
+    <div>
+        <div class="box">
+                안뇽
+                잘가
+        </div>
+    </div>
+    <hr>
+    <div>
+        <div class="box square"> <!-- 클래스는 띄어쓰기로 여러개 줄 수 있디. 뭐를..?-->
+            나는 컨텐츠 입니다.나는 컨텐츠 입니다.나는 컨텐츠 입니다.나는 컨텐츠 입니다.나는 컨텐츠 입니다.나는 컨텐츠 입니다.
+        </div>
+    </div>
+    <hr>
+    <ul>
+        <li>block 요소는 기본 너비는 브라우저 너비(100%), 높이는 컨텐츠(auto)가 결정</li>
+        <li>html 컨텐츠는 라인개행(/n)을 무시한다. 공백이 있으면 공백도 무시</li>
+        <li>block의 높이를 지정하면 고정 크기로 바뀐다. so, 컨텐츠가 밖으로 나옴(overflow:visible)</li> <!--③-->
+        <li>overflow는 컨텐츠가 블럭을 벗어났을 때 어떻게 보일지 결정. ex)hidden, visible, scroll...</li>
+        <li>block은 박스모델의 contents, padding, border, margin을 갖는다. </li>
+        <li>박스모델의 contents의 기본값은 border를 포함하지 않는다.(너비 높이는 컨텐츠의 크기를 지정)</li>
+        <li>box-sizing은 대부분의 사람들이 border까지로 컨텐츠를 인식해서 등장</li>
+    </ul>
+<h2>방향 단축</h2>
+    <ul>
+        <li>padding: A; → 모든방향 A</li>
+        <li>padding: A B; → 위아래A 좌우B</li>
+        <li>padding: A B C; → 위A 좌우B 아래C</li>
+        <li>padding: A B C D; → 위A 오른쪽B 아래C 왼쪽D ⇒ 시계방향</li>
+    </ul>
+<hr>
+<!--실습-->
+<style>
+    #profile-back{
+        width: 300px;
+        height: 300px;
+        line-height: 300px;
+        background-color: #ffeeee;
+        margin: 50px auto;
+        border: 1px solid silver;
+        border-radius: 5px; /*모서리 둥글게 맹글기(px/%). px보다 %가 더 동그랗게 만듦.*/ /*이것도 4방향 다르게 설정 가능*/
+        text-align: center;
+    }
+    #profile-back>.img-back{
+        display: inline-block;/*inline-block을 지정하면 너비높이가 컨텐츠 크기로 변경*/
+        line-height: 20px;
+    }
+    #profile-back>.img-back>img{
+        width: 150px;
+        height: 150px;
+        border-radius: 10%;
+    }
+    #profile-back ul{
+        list-style-type: none;
+        padding-left: 0;
+    }
+    #profile-back ul>li:first-child{ /*nth-child(1)해도 됨*/
+        font-size: 20px;
+        font-weight: bold;
+        color: darkblue;
+        margin: 5px 0;
+    }
+    #profile-back ul>li:nth-child(2){
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    #profile-back ul>li:nth-child(3){
+        font-size: 12px;
+        margin: 5px 0;
+    }
+</style>
+<div>
+    <div id="profile-back">
+        <div class="img-back">
+            <img src="./src/img/character_Mongi.gif" alt="프로필사진">
+            <ul>
+                <li>김혜지</li>
+                <li>풀스택 개발자</li>
+                <li>hyedii_9@naver.com</li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
