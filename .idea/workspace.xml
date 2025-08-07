@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/L03Attribute.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L04Style.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/아기고양이.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/S02Attribute.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/S03Style.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,13 +37,14 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript 디버그.L01Hello.html.executor": "Run",
     "JavaScript 디버그.L02BlockInlineElement.html.executor": "Run",
+    "JavaScript 디버그.S03Style.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/src/img",
+    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/ex",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,19 +56,23 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src\img" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\ex" />
+      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src\img" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript 디버그.L02BlockInlineElement.html">
+  <component name="RunManager" selected="JavaScript 디버그.S03Style.html">
     <configuration name="L01Hello.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML_study/L01Hello.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="L02BlockInlineElement.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML_study/L02BlockInlineElement.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="S03Style.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HTML_study/ex/S03Style.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript 디버그.S03Style.html" />
         <item itemvalue="JavaScript 디버그.L02BlockInlineElement.html" />
         <item itemvalue="JavaScript 디버그.L01Hello.html" />
       </list>
@@ -89,7 +93,8 @@
       <option name="presentableId" value="Default" />
       <updated>1754381878568</updated>
       <workItem from="1754381879600" duration="3847000" />
-      <workItem from="1754440298195" duration="10291000" />
+      <workItem from="1754440298195" duration="11906000" />
+      <workItem from="1754526391647" duration="4303000" />
     </task>
     <servers />
   </component>
