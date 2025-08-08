@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>요소를 보이지 않게 하기</title>
+    <style>
+        .box{
+            width: 3em;
+            height: 3em;
+            display: inline-block;
+            background-color: #e1ffe4;
+        }
+        .d-none:hover{
+            display: none;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>다양한 방법으로 요소를 숨겨봅시다</h1>
+    <ul>
+        <li>hidden :
+            <div class="box" hidden>
+            </div>
+            hidden은 input만 사라짐
+        </li>
+        <li>
+            display:none
+            <div class="box" style="display: none"></div>
+            (요소가 사라짐. 없는 것처럼 취급됨)
+        </li>
+        <li>
+            opacity(투명도) : 0
+            <div class="box" style="opacity: 0"></div>
+            (보이지 않을 뿐 블럭 존재)
+        </li>
+        <li>
+            <div class="box" style="width: 0;">
+                컨텐츠
+            </div>
+            너비를 0으로. 컨텐츠는 존재.
+        </li>
+        <li>
+            <div class="box" style="width: 0; overflow: hidden">
+                컨텐츠
+            </div>
+            컨텐츠 안 보이게 하기 hidden 사용
+        </li>
+        <li>
+            border가 존재하면 크기조정으로 사라지게 하지 못함. →
+            <div class="box" style="border: 1px #dd1e7f solid; width: 0"></div>
+        </li>
+        <li>
+            border를 없애려면 두께를 0으로 해야함. none으로 하던지.
+            <div class="box" style="border: 0 #dd1e7f solid; width: 0"></div>
+        </li>
+        <li>
+            visibility: hidden
+            <div class="box" style="visibility: hidden"></div>
+            요소는 존재하지만 보이지 않게 함
+        </li>
+        <li>
+            transform: scale(0)
+            <div class="box" style="transform: scale(0.4)"></div>
+            transform을 이용해서 제 거 ! 가 아니라.. 줄어들게 하는거(그 자리에서). 공간은 남아있움
+        </li>
+    </ul>
+    <h2>의사 클래스 (상태나타내기)</h2>
+    <div>
+        <div class="box d-none"></div>
+    </div>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>단위</title>
+</head>
+<style>
+    .box{
+        display: inline-block;
+        background-color: #c2d4f9;
+        width: 4em;
+        height: 4em;
+    }
+</style>
+<body>
+    <h1>CSS의 단위에 대해 알아봅시다</h1>
+    <p>cm, m, km, 원, 도씨와 같은 일상적인 단위는 css에 존재하지 않는다.</p>
+    <h2>브라우저(css)에서 사용하는 단위</h2>
+    <ul>
+        <li>px :
+            <div class="box" style="width: 100px; height: 100px"> 100px*100px</div>
+            모니터(디스플레이)의 해상도 기준 크기
+        </li>
+        <li>% :
+            <div class="box" style="width: 30%; height: 30%">30%*30%</div>
+            %는 브라우저 기준이 아니라 부모요소를 기준으로 말함. 여기서는 li가 기준이기 때문에 h가 커지지 않음.
+        </li>
+        <li>vw, vh (viewport 브라우저 기준으로. 100~0) :
+            <div class="box" style="width: 20vw; height: 20vh;">20vw*20vh</div>
+            브라우저 크기에 따라 변함.
+        </li>
+        <li>rem (1rem = 16px(기본font 사이즈가 16px임)) :
+            <div class="box" style="width: 2rem; height: 2rem;"></div>
+            글자 크기를 기준으로 크기를 지정. 요즘 많이 씀~*
+        </li>
+        <li>em(시작은 16px인데 부모요소의 크기를 기준으로 계속 바뀜)
+            <div class="box" style="font-size:.5em; width: 10em; height: 10em;"> <!--font-size에 따라 너비높이도 변함-->
+                <!--<span style="font-size:1em">10em*10em</span>-->
+            </div>
+            부모크기의 font-size를 em으로 변경하면 자식은 부모가 변경한 font-size를 1em으로 보고 계산한다.
+        </li>
+    </ul>
+    <h2>색에서 사용하는 단위</h2>
+    <ul>
+        <li>rgb(0~255 0~255 0~255) :
+            <div class="box" style="background-color: rgb(110,100,90)">rgb(110,100,90)</div>
+        </li>
+        <li>rgba(0~255 0~255 0~255 0~1) :
+            <div class="box" style="background-color: rgba(110,100,90,0.3)">rgba(110,100,90,0.3)</div>
+            →투명도가 있는 색
+        </li>
+        <li>16진수 색 #(00~FF = 0~255)
+            <div class="box" style="background-color: #AAbbee">#AAbbee</div>
+        </li>
+        <li>HSL(색조 Hue(0~360),채도 Saturation(0~100),명도 Lightness(0~100)) :
+            <div class="box" style="background-color: hsl(20,100%,90%)">hsl(20,100%,90%)</div>
+        </li>
+        <li>HSLA(색조 Hue(0~360),채도 Saturation(0~100),명도 Lightness(0~100),Alpha(0~1)) :
+            <div class="box" style="background-color: hsla(20,40%,70%,0.7)">hsla(20,40%,70%,0.7)</div>
+        </li>
+    </ul>
+    <h2>단위작성시 주의사항</h2>
+    <ul>
+        <li>
+            <div class="box" style="width: 0;"></div>
+            0을 제외하고는 단위가 없는 수가 없다. 0 말고는 다 단위가 있어야 한다는 말.
+        </li>
+        <li>
+            <div class="box" style="width: 100px+20px;"></div> <!--이렇게 하면 안댐-->
+            계산으로 값을 대입할 수 없다.
+        </li>
+        <li>
+            <div class="box" style="width: calc(300px / 4);"></div>
+            계산 값 쓰고 싶으면 계산할 수 있는 calc 사용하기 calc(300px/4)
+        </li>
+        <li>
+            <div class="box" style="width: calc(300px + 100px)">calc(300px+100px)</div>
+            calc 연산시 연산자 주변에 공백을 줘야 오류가 발생하지 않음. (ex) 300px+100px 이렇게 말고 300px + 100px 이렇게~
+        </li>
+    </ul>
+    
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
