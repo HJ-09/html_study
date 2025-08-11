@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>display flex</title>
+</head>
+<body>
+    <h1>flex로 layout을 구성하자</h1>
+    <p>flex는 요소를 블럭으로 정렬하기 위해 만들어짐(기본값: 가로정렬)</p> <!--블럭요소가 마치 inline요소처럼 가로정렬-->
+    <ul style="display: flex; list-style: none">
+        <li>플렉스아이템</li>
+        <li>플렉스아이템</li>
+        <li>플렉스아이템</li>
+        <li>플렉스아이템</li>
+        <li>플렉스아이템</li>
+    </ul>
+    <div style="display: flex; justify-content: right">  <!--justify-content는 flex 속성-->
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+    </div>
+    <h2>justify-content: </h2> <!--주측정렬!?-->
+    <div style="display: flex; justify-content: space-around"> <!--space-aroud; 플렉스 아이템 주변에 여백을 고르게 주겠다..!-->
+        <p>아이템1</p>
+        <p>아이템2</p>
+        <p>아이템3</p>
+        <p>아이템4</p>
+        <p>아이템5</p>
+    </div>
+    <div style="display: flex; justify-content: space-evenly"> <!--space-evenly; 플렉스 아이템에 여백을 고르게 주겠다..!-->
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+    </div>
+    <div style="display: flex; justify-content: space-between"> <!--space-between; 왼오 붙이고 플렉스 아이템에 여백을 고르게 주겠다..!-->
+        <p>1아이템</p>
+        <p>2아이템</p>
+        <p>3아이템</p>
+    </div>
+    <div style="display: flex; justify-content: center">
+        <p>01아이템</p>
+        <p>02아이템</p>
+    </div>
+    <hr>
+    <style>
+        .flex-wrap{
+            display: flex;
+            height: 5em;
+            border: 1px darkcyan dashed;
+            margin: 1em 0;
+        }
+        .flex-wrap>p{
+            border: 1px #dd1e7f solid;
+            /*height: fit-content;*/
+        }
+    </style>
+    <div class="flex-wrap">
+        <p>01아이템</p>
+        <p>02아이템</p>
+        <p>03아이템</p>
+    </div>
+
+    <h2>교차측 정렬: flex 정렬의 교차측 정렬(기본값: stretch)</h2>
+    <div class="flex-wrap" style="align-items: center">
+        <p>01아이템</p>
+        <p>02아이템</p>
+        <p>03아이템</p>
+    </div>
+    <div class="flex-wrap" style="align-items: flex-end">
+        <p>01아이템</p>
+        <p>02아이템</p>
+        <p>03아이템</p>
+    </div>
+    <div class="flex-wrap" style="align-items: flex-start">
+        <p>01아이템</p>
+        <p>02아이템</p>
+        <p>03아이템</p>
+    </div>
+    
+    <div class="flex-wrap" style="height: 20em">
+        <div>
+            <h2>로그인 폼</h2>
+            <p>id:
+                <input type="text"></p>
+            <p>
+            <!--┌─ 입력요소를 포커스하거나 체크하는 용도-->
+                <label>
+                    pw:
+                    <input type="password">
+                </label>
+            </p>
+            <p style="text-align: center">
+                <button>로그인</button>
+                <button>회원가입</button>
+            </p>
+        </div>        
+    </div>
+
+
+</body>
+</html>

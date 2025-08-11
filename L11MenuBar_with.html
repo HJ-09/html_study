@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>MenuBar를 만들어보자</title>
+    <style>
+        header{
+            padding: 0 1em;
+        }
+        body{
+            margin: 0;
+        }
+        #HomeMenu{
+            background-color: #000037;
+            position: sticky;
+            top: 0;
+        }
+        #HomeMenu .menu>li{
+            display: inline-block;
+            color: white;
+            font-size: 0.9em;
+            padding: 1em;
+            position: relative;
+        }
+        #HomeMenu .menu>li:hover .submenu{
+            display: inline-block;
+
+        }
+        #HomeMenu ul.submenu{ /*id HomeMenu 기준으로 submenu는 자손이니까 띄어쓰기*/
+            display: none; /*숨기기*/
+            position: absolute;
+            background-color: #fffef3;
+            left: 1em;
+            top: 3em;
+            list-style: none;
+            padding: 0.5em 1em;
+            width: fit-content;
+        }
+        #HomeMenu ul.submenu>li{
+            padding: 0.5em;
+        }
+        #HomeMenu ul.submenu>li:hover{
+            background-color: #8ab7e3;
+        }
+        #HomeMenu ul.submenu>li>a{
+            color: gray;
+            width: fit-content;
+        }
+        main{
+            min-height: 80vh; /*최소높이를 80vh로 준거임. 컨텐츠 양이 늘어나면 80vh보다 커질 수 있음*/
+            padding: 0 1rem;
+        }
+        footer{
+            background-color: midnightblue;
+            color: white;
+            margin: 4rem 0;
+            padding: 2rem 1rem;
+        }
+        footer>ul{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--의미론적 태그(시멘틱 요소)는 검색엔진 봇에게 사이트 구조나 내용을 알려주기 위함임 ⇒ SEO ..?-->
+    <header>
+        <h1>MenuBar Home</h1>
+    </header>
+    <!--header는 사이트 제목,
+        nav는(네비게이션..!) 사이트에서 이동할 수 있는 리소스의 링크
+        main은 사이트의 본문
+        footer는 사이트 운영방침, 사이트를 운영하는 회사 정보
+        -->
+        <!--보통 id는 낙타표기법을 권장하지만 요즘엔 -를 많이 사용하는 추세임. but 회사 규율에 따르세욥 ^-^-->
+    <nav id="HomeMenu"> <!--id는 유일한 것에 붙이는 이름이라서 짧은 것보단 길고 명확하게 해두는게 좋음-->
+        <ul class="menu"> <!--대분류 ul-->
+            <li>자바수업
+                <ul class="submenu"> <!--소분류 ul-->
+                    <li><a href="./a">기본문법</a></li>
+                    <li><a href="./b">입출력</a></li>
+                    <li><a href="./c">소켓통신</a></li>
+                    <li><a href="./d">GUI</a></li>
+                </ul>
+            </li>
+            <li>프론트엔드수업
+                <ul class="submenu"> <!--ul.submenu>(li>a[href="#"]{$$})*5-->
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">05</a></li>
+                </ul>
+            </li>
+            <li>빅테이터수업
+                <ul class="submenu"> <!--ul.submenu>(li>a[href=#]{$})*3-->
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>메뉴바 만들기 수업</h2>
+        <p>SMU에서 진행하는 엔지니어 양성과정</p>
+    </main>
+
+    <footer>
+        <ul>
+            <li>회사명 : SMU</li>
+            <li>대표 : 최경민</li>
+            <li>사업자 등록번호 : 123-45-6789</li>
+            <li>주소 : 서울시 구로구 가산동 123-45번지</li>
+            <li>e-mail : smu@gmail.com</li>
+        </ul>
+    </footer>
+</body>
+</html>

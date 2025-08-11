@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/L08Units.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L09Position.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10DisplayNone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S05Units.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S06Position.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S07DisplayNone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S08PseudoClasses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S09MenuBarEx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L11MenuBar_with.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L12Float.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L13Flex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14FlexItem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/S10Float.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/S11Flex.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +41,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript 디버그.L01Hello.html.executor": "Run",
     "JavaScript 디버그.L02BlockInlineElement.html.executor": "Run",
+    "JavaScript 디버그.L10DisplayNone.html.executor": "Run",
+    "JavaScript 디버그.L11MenuBar_with.html.executor": "Run",
     "JavaScript 디버그.S03Style.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -66,11 +66,17 @@
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src\img" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript 디버그.S03Style.html">
+  <component name="RunManager" selected="JavaScript 디버그.L11MenuBar_with.html">
     <configuration name="L01Hello.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML_study/L01Hello.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="L02BlockInlineElement.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML_study/L02BlockInlineElement.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="L10DisplayNone.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HTML_study/L10DisplayNone.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="L11MenuBar_with.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HTML_study/L11MenuBar_with.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="S03Style.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HTML_study/ex/S03Style.html" useBuiltInWebServerPort="true">
@@ -78,6 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript 디버그.L11MenuBar_with.html" />
+        <item itemvalue="JavaScript 디버그.L10DisplayNone.html" />
         <item itemvalue="JavaScript 디버그.S03Style.html" />
         <item itemvalue="JavaScript 디버그.L02BlockInlineElement.html" />
         <item itemvalue="JavaScript 디버그.L01Hello.html" />
@@ -101,7 +109,8 @@
       <workItem from="1754381879600" duration="3847000" />
       <workItem from="1754440298195" duration="11906000" />
       <workItem from="1754526391647" duration="19294000" />
-      <workItem from="1754612870817" duration="18866000" />
+      <workItem from="1754612870817" duration="19494000" />
+      <workItem from="1754872433590" duration="21862000" />
     </task>
     <servers />
   </component>
