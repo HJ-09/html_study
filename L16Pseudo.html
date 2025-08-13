@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>의사 요소 선택자</title> <!--존재하지 않는 곳에 만들어주는 것을 의사 요소 선택자라고 함.--> <!--제일 많이 쓰는게 before, after-->
+    <style>
+        .before-apple::before{
+            content:"🍎"
+        }
+        .after-smile::after{
+            content: "😉";
+        }
+    </style>
+</head>
+<body>
+    <h1>존재하지 않는 요소를 선택해서 스타일 적용</h1>
+    <h2>::before → 자식의 맨 앞. content를 꼭 작성해야 생성</h2>
+    <div class="before-apple">
+        안녕하세욥
+    </div>
+    <h2>::after → 자식의 맨 뒤. content를 꼭 작성해야 생성</h2>
+    <div class="after-smile">
+        식사 맛있게 하세욥
+    </div>
+    <h2>after 예시 (float)</h2>
+    <div style="border: 1px solid #dd1e7f">
+        <div style="float: left">01</div>
+        <div style="float: left">02</div>
+        <div style="float: left">03</div>
+        <!--객체가 다 float이면 부모블럭이 인지를 못해서 작아짐-->
+    </div>
+
+    <hr style="clear: left">
+    <style>
+        .float-container{
+            border: 3px solid deepskyblue;
+        }
+        .float-container>div{
+            float: left;
+            width: 5em;
+            height: 5em;
+            background-color: #f9c2c2;
+            border: 1px dashed navy;
+        }
+        .after-block::after{ /*부모요소를 속이는 중..^^*/
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <h2>float 박스가 존재하는 것처럼 부모요소를 속이기..!</h2>
+    <div class="float-container">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+    <hr style="clear: left;">
+    <div class="float-container after-block">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+    <div class="float-container">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
