@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/L17Transition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L18Transform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S16TransitionTransformHW.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L19Transform3D.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L21Background.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L22Mediaquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/S19BackgroundAndGradient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/S20MediaQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/S21FrontendFramework.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/S22Bootstrap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex/S14Transition.html" beforeDir="false" afterPath="$PROJECT_DIR$/ex/S14Transition.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,34 +37,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript 디버그.L01Hello.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.L02BlockInlineElement.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.L10DisplayNone.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.L11MenuBar_with.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.S03Style.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kosmo/WebstormProjects/HTML_study/ex&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript 디버그.L01Hello.html.executor": "Run",
+    "JavaScript 디버그.L02BlockInlineElement.html.executor": "Run",
+    "JavaScript 디버그.L10DisplayNone.html.executor": "Run",
+    "JavaScript 디버그.L11MenuBar_with.html.executor": "Run",
+    "JavaScript 디버그.S03Style.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/ex",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\ex" />
+      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src\img" />
     </key>
   </component>
@@ -112,7 +116,8 @@
       <workItem from="1754872433590" duration="21889000" />
       <workItem from="1754958996817" duration="3106000" />
       <workItem from="1755045502526" duration="18160000" />
-      <workItem from="1755132134337" duration="18076000" />
+      <workItem from="1755132134337" duration="18588000" />
+      <workItem from="1755563386338" duration="11232000" />
     </task>
     <servers />
   </component>

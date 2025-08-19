@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>background 속성으로 배경을 지정하자</title>
+    <style>
+        .container{
+            min-height: 20em;
+        }
+    </style>
+</head>
+<body>
+    <h1>background 속성으로 배경을 지정하자</h1>
+    <h2>배경색: background color</h2>
+    <div class="container" style="background-color: #000037">
+
+    </div>
+    <h2>배경이미지: background image</h2>
+    <div class="container"
+         style="background-image: url('/src/img/아기고양이.jpg');
+         background-size: 1em; background-repeat: repeat"></div> <!--background-repeat 기본 값 ⇒ repeat-->
+    <h2>배경이미지 정렬 및 반복</h2>
+    <h3>cover</h3>
+    <div class="container"
+         style="background-image: url('/src/img/아기고양이.jpg');
+         background-size: cover">
+        고양이 안녕~
+    </div>
+    <h3>contain</h3>
+    <div class="container"
+         style="background-image: url('/src/img/아기고양이.jpg');
+         background-size: contain; background-repeat: no-repeat">
+        고양이야 안녕~
+    </div>
+    <div class="container"
+         style="height: 20em;
+         background-image: url('/src/img/아기고양이.jpg');
+         background-size: 10em 10em; background-repeat: no-repeat;
+         background-position: 20% center"> <!--좌우는 중앙정렬x, 위아래만 중앙정렬-->
+        고양아 안녕~
+    </div>
+
+    <h2>배경의 그라데이션 gradient</h2>
+    <h3>선형 그라데이션 linear-gradient(???)</h3>
+    <div class="container" style="background: linear-gradient(blue, red)"></div>
+
+    <h3>그라데이션 방향</h3>
+    <div class="container" style="background: linear-gradient(to right, blue, red)"></div>
+    <div class="container" style="background: linear-gradient(180deg, blue, red)"></div> <!--각도는 맨 앞에-->
+    <div class="container" style="background: linear-gradient(45deg, blue, red, darkgreen, darkmagenta)"></div>
+
+    <h3>그라디언트 색의 크기 지정</h3>
+    <div class="container" style="background: linear-gradient(45deg, blue, red 40% 70%, darkgreen, darkmagenta)"></div>
+    <div class="container" style="background: linear-gradient(45deg, blue 0 50%, red 40% 70%, darkgreen, darkmagenta)"></div> <!--고정크기가 되어버리면 그라데이션 안 생김-->
+
+    <h3>그라디언트+size: 사진처럼 취급</h3>
+    <div class="container"
+         style="
+         background-image: url('/src/img/아기고양이.jpg'), linear-gradient(45deg, olive 0 30%, red 20% 50%, yellowgreen, darkmagenta);
+         background-size: 5em 2em;"></div>
+
+    <h2>원형 그라디언트 radial-gradient</h2>
+    <div class="container" style="background: radial-gradient(at 0% 50%, red, orange, midnightblue, darkmagenta)"></div>
+    <div class="container" style="background: radial-gradient(red 0% 10%, orange 10% 25%, midnightblue 25% 50%, darkmagenta 50% 100%)"></div> <!--고정크기가 되어버리면 그라데이션 안 생김-->
+
+    <h2>원뿔 그라디언트 conic-gradient</h2>
+    <div class="container" style="background: conic-gradient(at 20% 20%, red, orange, midnightblue, darkgreen)"></div>
+    <div class="container" style="background: conic-gradient(red 0% 15%, orange 15% 30%, midnightblue 30% 55%, white 55% 100%)"></div> <!--고정크기가 되어버리면 그라데이션 안 생김-->
+    <div class="container" style="background: conic-gradient(red 0deg 20deg, orange 20deg 45deg, midnightblue 45deg 70deg, white 70deg 100deg)"></div>
+    <div class="container" style="background: repeating-conic-gradient(red 0deg 10deg, orange 10deg 20deg, midnightblue 20deg 30deg, white 30deg 40deg)"></div>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

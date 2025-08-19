@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--└─ "브라우저 크기가 디바이스 크기고, 비율은 1로 보겠다. "는 의미.-->
+    <title>미디어쿼리로 반응형 웹 구현</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        nav>ul{
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+            justify-content: space-between;
+        }
+        /*미디어쿼리 max-width는 큰해상도를 먼저 작성*/
+        @media (max-width: 700px) {
+            body{
+                background-color: #ffdcdc;
+            }
+            nav>ul{
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 400px) {
+            body{
+                background-color: #c2d4f9;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>미디어쿼리로 반응형 웹 구현</h1>
+    <header>
+        <nav>
+            <ul>
+                <li>01 HOME</li>
+                <li>02 BAG</li>
+                <li>03 TOP</li>
+                <li>04 BOTTOM</li>
+                <li>05 JOIN</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
