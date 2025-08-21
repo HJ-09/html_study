@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/L19Transform3D.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L21Background.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L22Mediaquery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S19BackgroundAndGradient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S20MediaQuery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S21FrontendFramework.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex/S22Bootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L20Animation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L23Bootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/S18Animation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S19BackgroundAndGradient.html" beforeDir="false" afterPath="$PROJECT_DIR$/ex/S19BackgroundAndGradient.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +49,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/ex",
+    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,8 +61,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\ex" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study" />
+      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\ex" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src\img" />
     </key>
   </component>
@@ -117,7 +114,8 @@
       <workItem from="1754958996817" duration="3106000" />
       <workItem from="1755045502526" duration="18160000" />
       <workItem from="1755132134337" duration="18588000" />
-      <workItem from="1755563386338" duration="11232000" />
+      <workItem from="1755563386338" duration="11753000" />
+      <workItem from="1755736059294" duration="15600000" />
     </task>
     <servers />
   </component>
