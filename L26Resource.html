@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>리소스 참조를 배워보자</title>
+    <!--외부 css 참조 위치. title 밑. link로 참조..-->
+    <link rel="stylesheet" href="/src/bootstrap-5.3.7/dist/css/bootstrap.css"> <!--바뀔 가능성이 있는 외부참조를 더 위로.-->
+    <link rel="stylesheet" href="/src/css/background.css">
+    <!--내부 css 참조 위치. style 이런거~?-->
+    <style>
+        body{
+            background: lightblue;
+        }
+    </style>
+    <!--외부보다 내부가 우선순위가 높아야 함. 외부참조끼리도 나중에 참조한게 우선순위가 더 높음. -->
+</head>
+<body>
+    <h1>리소스 참조를 배워보자</h1>
+    <p>http://localhost:63342/HTML_study/L26Resource.html</p>
+    <ul>
+        <li>http ⇒ 통신규약</li>
+        <li>localhost ⇒ 내 컴퓨터 내부 127.0.0.1</li>
+        <li>63342 ⇒ os가 부여한 고유번호 (=port)</li>
+        <li>HTML_study/L26Resource.html ⇒ 서버 내의 리소스 주소(path)</li>
+        <li>http://localhost:63342/HTML_study/L26Resource.html ⇒ url</li>
+    </ul>
+
+    <p>
+        <img src="/src/img/아기고양이.jpg" alt="아기고양이" width="50">
+    </p>
+
+    <h2>상대 경로</h2>
+    <ul>
+        <li>/path ⇒ 루트경로. 리소스의 맨 위 상단</li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <h2>다른 문서(html)를 포함하는 iframe</h2>
+    <h3> / : 루트 상대경로</h3>
+    <iframe src="/L01Hello.html"></iframe>
+    <hr>
+    <h3> ./ ../ : 리소스 위치 기준 상대경로</h3>
+    <iframe src="./L01Hello.html"></iframe>
+    <hr>
+    <iframe src="L01Hello.html"></iframe>
+    
+    <h3>절대경로 ⇒ 통신규약 or 드라이버</h3>
+    <iframe src="http://localhost:63342/HTML_study/L01Hello.html"></iframe>
+
+    <h3>절대경로로 다른 사이트 참조</h3>
+    <p>CORP: Cross-Origin Resource Policy ⇒ SOP(Same Origin Policy): 같은 서버의 리소스만 참조가능.</p>
+    <iframe src="https://naver.com"></iframe> <!--네이버는 같은 서버의 리소스가 아니라서 참조 x-->
+    <hr>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/szH0LEg3pgM?si=cODp-eRzW7rratuu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--그렁데 유튜브는 같은 서버의 리소스가 아니어도 참조가 가능. 왜? 많이 볼수록 돈이 되는 플랫폼이니까~-->
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트</title>
+    <style>
+        body{
+            margin: calc(1vh*1.5); /* calc()는 css가 너무 정적이라서 도입된 기술임. */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //title이 렌더링 되기 전에 실행
+        console.log(title) //title 전에 써서 title이 업슴! undefined ⇒ 정의되지 않음
+        title.style.background="yellow" //위와 같은 이유로 실행x
+    </script>
+
+    <h1 id="title">자바스크립트 안녕~</h1>
+    <p>웹 페이지를 동적으로 만드는 자바스크립트</p>
+    <p>동적: 문서가 렌더링 된 이후에 동작하는걸 말함.</p>
+    
+    <h2>자바스크립트가 동작하는 예</h2>
+    <ul>
+        <li>무한 스크롤 페이징</li>
+        <li>자동 재생</li>
+        <li>네이버의 뉴스 (ajax)</li>
+        <li>장바구니 (ajax)</li>
+        <li>이미지 슬라이더, 팝업, 콜랩스 (js)</li>
+        <li>양식 검증 (js)</li>
+        <li>아이디 중복체크 (ajax)</li>
+    </ul>
+    
+    <script>
+        //주석~~ ⇒ 실행되지 않는 코드 ^3^
+        console.log("헬로");
+        //자바스크립트는 연산(+-*/% ==....) 가능한 언어. (html, css는 안댐. calc()는 예외 ^^)
+        console.log(11*11)
+        console.log(11.1*11.1)
+        console.log(11.1*11.1-100) //23.2099999999994 ⇒ 실수가 연산할 때 발생하는 오류
+
+        console.log(title)
+        //title: 아이디로 생성된 변수가 참조하는 노드 개체
+        //아이디: 문서 전체에서 한 개만 있는 이름 (#)
+        //클래스: 여러개 지정가능한 이름 (.)
+        //변수: 재사용하기 위해 참조하는 것 (그릇에 비유... 언제?ㅠ..)
+        //개체,객체: 프로그램에서 사용되는 데이터
+        //노드: 트리의 구성 요소
+        //노드개체(요소, 태그): 요소로 만들어진 데이터
+        //노드개체의 구성 요소 ⇒ css정보, 속성(id, class, data-* ...), 이벤트
+        //모든 노드개체는 이벤트를 정의할 수 있음 (키보드CLI, 마우스 GUI, 마이크, 터치...)
+
+        //코드는 위에서부터 아래로 실행
+        title.style.color="blue"
+        title.style.color="#043504"
+        //그런데, 똑같은 코드를 두 번 실행하면 아래코드가 위에 코드를 덮어버림.
+        title.style.background="lightgray"
+
+        //script: 노드개체가 모두 출력되고 나서 작성
+        //1.body의 자식인데 맨 아래 (권장 o)
+        //2.제어하려는 노드개체의 바로 아래 (권장 x)
+        //3.외부 script일 때 defer 옵션 사용(노드개체가 모두 렌더링 되고 나서)
+
+        //on*: 이벤트속성(함수 _복잡한 동작을 정의해두고 호출해서 재사용)
+        //function(){}, ()=>{} ⇒ 자바스크립트 함수
+        //class A{ ⇒ 자바
+        // void sum(){}
+        // }
+
+
+        title.onmouseover=function () {
+            //title.style.text-decoration
+            //-는 마이너스 연산
+            //이름 중에 -가 있으면 낙타표기법으로 바뀜
+            title.style.textDecoration="underline"
+        }
+        title.onmouseleave=()=>{
+            title.style.textDecoration="none"
+        }
+
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
