@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>변하지 않는 상수</title>
+</head>
+<body>
+    <h1>변하지 않는 상수</h1>
+    <script>
+        var v; //변수. 근데 얘는 사용 x
+        let a; //변수
+        console.log(a) //undefined
+        a=10;
+        a="안녕";
+        //계속 바뀔 수 있는 수 ⇒ 변수
+
+        //const c; //Uncaught SyntaxError: Missing initializer in const declaration
+        //const는 undefined(정의되지 않은) 상태를 허용하지 않음.
+        const c=10; //const는 꼭 정의해야함 !
+        //c=20; //Uncaught TypeError: Assignment to constant variable.
+        //const는 variable 하지 않음. 바꿀 수 없다!
+        console.log(c)
+
+        //대입연산//
+        a=a+"!";
+        console.log(a) //안녕!
+        a+="~";
+        console.log(a) //안녕!~
+        //c+=1; //Uncaught TypeError: Assignment to constant variable. //상수는 바꿀 수 없기 때문에 대입연산 불가능
+
+        //표기법//
+        //NumSum ⇒ 파스칼표기법 (대명사, class명)
+        //numSum ⇒ 낙타표기법 (메소드명, 변수명 등)
+        //NUM_SUM ⇒ 스네이크표기법 → 일반적인 상수 표기법
+        //num_sum ⇒ 파일, 폴더 이름
+        //num-sum ⇒ html 선택자 이름 (마이너스 연산으로 인식하기 때문에 자바, 자바스크립트에서 사용 x)
+
+        const SUM=10; //final int SUM=10; ⇒ 자바문법...
+        const PI=3.14;
+        //Math: type
+        //PI: Math의 상수 필드(참조값)
+        console.log(Math.PI)
+        console.log(Math.pow(2,10)) //2의 10승
+        console.log(Math.random())
+        //상수는 PI처럼 바뀌지 않는 정보를 정의하는 용도
+
+        //상수지만 스네이크문법을 사용하지 않는 경우가 존재
+        //정보가 아니지만 타입을 바꾸지 않기 위해 상수를 사용
+        //함수 이름 대신 상수를 사용하는 경우
+    </script>
+</body>
+</html>

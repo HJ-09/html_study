@@ -7,6 +7,33 @@
 <body>
     <h1 id="title">변수와 데이터</h1>
     <script>
+        //let, var은 변수
+        let l=30; //수, number
+        //이 때 부터 l은 30을 가지고 있음(참조). ⇒ 30이라는 데이터를 l로 재사용
+        console.log(l) //30
+        console.log(l*l) //900
+        //자바스크립트는 변수가 다른 수를 참조할 수 있다.
+        l="안녕"; //l은 동적타입으로 다른 타입의 데이터를 참조 할 수 있다. = 타입이 바뀔 수 있다는 읨.
+        console.log(l) //안녕
+        console.log(l+" 잘가!") //안녕 잘가!
+        console.log(l*10) //NaN ⇒ 숫자가 아님. (Not A Number)
+        //문자열은 더하기 말고는 숫자연산 할 수 없음.
+
+        //at 자바
+        //int i=30;
+        //i="안녕"; ⇒ 컴파일오류
+        //String s="잘가";
+        //s=10; ⇒ 컴파일오류
+
+        l=[10,21,32,43]; //배열 자료형(ArrayList)
+        l.push(51);
+        l.push("61");
+        //push : 배열의 끝에 데이터를 추가 (==add)
+        console.log(l) //(6) [10,21,32,43,51,'61']
+        //자료형에는 배열과 객체가 있다.
+
+
+
         console.log(title) //style, on*, id, class...
         //필드가 존재하는 데이터는 자료형이다.
 
@@ -18,7 +45,7 @@
         console.log(11) //정수 integer int
         console.log(11.0) //실수 double 11.0 ⇒ float 11.0f
 
-        //자바스크립트는 실수/정수 구분이 없음. Number만 잇슴
+        //자바스크립트는 실수/정수 구분이 없음. Number만 잇슴. Number는 double과 같은거임!
         console.log(typeof 11)
         console.log(typeof 11.1)
         console.log(12312312312312312312312312312)

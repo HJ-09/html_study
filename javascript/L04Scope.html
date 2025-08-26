@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>영역 scope</title>
+</head>
+<body>
+    <h1>영역 scope {}</h1>
+    <script>
+        let a=10; //전체영역 global scope
+        {
+            let a=20; //지역 local scope
+            //이 a는 {}내부에서만 쓰임!
+            console.log(a) //20
+            //지역과 전체영역에 같은 이름이 있을 때, 지역에서는 지역이 우선순위!
+        }
+        console.log(a); //전체영역에 있는 10 호출
+
+        /////////// java랑 js 공통얘기
+        let b=30;
+        {
+            console.log(b); //전역에 있는 데이터는 지역에서 사용할 수 있음.
+            let c=30;
+        }
+        {
+            //console.log(c) //오류. 형제끼리는 변수 공유 x.
+        }
+        {
+            {
+                {
+                    {
+                        //중첩스코프 사용가능
+                        let a=100;
+                        //지역변수는 전역변수와 같은 이름을 선언할 수 있다.
+                        {
+                            console.log(a) //100
+                            //가장 가까운 영역(부모)의 a를 가르킴.
+                        }
+                    }
+                }
+            }
+        }
+
+        function sum(){ //여기 중괄호도 지역임. 중괄호 있으면 그냥 다 지역변수임.
+
+        }
+        function sum2(a,b){} //여기 a,b도 지역변수임. 소괄호에 써도 지역변수
+        if(a<20){
+            let a=30;
+        }
+
+        let d=200;
+        //let d=200;
+        //같은 이름의 변수를 같은 영역에서 여러번 선언하는 것은 불가능 ⇒ 오류
+
+        //변수(let, const)의 특징 2가지//
+        //같은 이름 2번 선언 못함.
+        //부모 영역을 자식 영역이 참조할 수 있음.
+
+    </script>
+</body>
+</html>

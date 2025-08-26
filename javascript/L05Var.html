@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오래된 변수 Var(1995.05)</title>
+
+    <style>
+        body{
+            margin: 0 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>오래된 변수 Var</h1>
+
+    <ul>
+        <b style="font-size: 17px">var이 이상한 점</b>
+        <li>여러번 선언 가능</li>
+        <li>실행컨텍스트가 var로 선언된 변수를 전역에 미리 undefined로 생성
+            ⇒ 호이스팅현상(hoisting)
+        </li>
+        <li>var는 무조건 전역변수이기 때문에 지역구분이 없어짐</li>
+    </ul>
+
+    <h2>var에 대한 면접 예상질문</h2>
+    <ul>
+        <li>var을 사용하면 안되는 이유</li>
+        <li>호이스팅 현상이 무엇인지?</li>
+        <li>호이스팅 현상으로 겪는 문제</li>
+        <li>let과 const가 나온 배경</li>
+    </ul>
+
+
+    <script>
+        //let, const → es6(2015)에 도입된 표준안 중 한 개
+        //일반적인 개발자가 생각하는 변수와 상수의 동작원리와 같음
+
+        //var이 유일한 변수였음(상수는 없음)
+
+        //실행컨텍스트: script로 작성된 코드를 실행하기 전에 실행에 필요한 코드를 미리 메모리에 저장
+        //실행컨텍스트가 var로 선언된 변수를 undefined로 생성함
+
+        var a=10;
+        console.log(a);
+        var a=20;
+        console.log(a);
+        //var은 여러번 선언 가능
+
+        let l=100;
+        //let l=200;
+        ///////////////////////
+        console.log(b) //undefined
+        var b=30;
+        //console.log(m) //Cannot access 'm' before initialization
+        let m=200;
+
+        {
+            var b=1000;
+            let m=2000;
+        }
+        console.log(m) //200
+        console.log(b) //1000
+        //var을 선언하면 지역이 없음. 다 전역변수.
+        //var을 선언하면 변수를 전역에 만듦
+
+
+
+
+
+    </script>
+</body>
+</html>
