@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>참거짓 데이터 boolean과 연산자</title>
+</head>
+<body>
+    <h1>참거짓 데이터 boolean과 연산자</h1>
+    <script>
+        let a=true; //참
+        let b=false; //거짓
+        console.log(a, b)
+        //참/거짓은 비교연산의 결과
+        // ==, !=, >, >=, <, <=
+        a=10;
+        b=5;
+        console.log(a>b) //true
+        console.log(a<b) //false
+        console.log(a==10) //true
+        console.log(b!=5) //false
+        //참거짓의 결과를 반환해주는 것이 부울데이터
+
+        //일반적인 프로그래밍 언어에서는 비교연산이 숫자만 가능함. 그런데 js는 문자열도 가능
+        //(정확히는 문자를 숫자로 형변환함)
+        console.log(a>"11") //false
+        console.log(a<"11") //true
+        //└─ (a<Number("11")) 이렇게 형변환
+        console.log(a>"안녕") //false
+        console.log(a<"안녕") //false. 숫자로 형변환 되지 않는 것과의 비교는 false
+
+        //==
+        //비교연산은 문자보다 숫자한테 유리. 그래서 대부분 숫자로 형변환.
+        console.log(11=="11") //true
+
+        //문자열간의 비교//
+        console.log("안녕"=="안녕") //true
+        //js에서는 문자열이 기본형이기 때문에 문자열간의 동등비교는 성립. 근데 자바에서 문자열은 객체이기 때문에 .equals() 사용을 권장.
+
+        console.log("사과"=="바나나") //false
+        console.log([]==[]) //false
+        console.log([1,2,3]==[1,2,3]) //false
+        //js에서는 .equals가 없어서 객체(자료형)간의 비교를 할 수 없음
+
+        // == 동등
+        // === 일치 (js 문법)
+        console.log(11=="11")
+        //두 데이터 타입이 다를 때, 동등을 물어보면 수로 형변환해서 비교. ∴ true
+        //html의 대부분의 속성값이 문자열이기 때문에 자동형변환 해줌.
+        console.log(11==="11")
+        //일치를 물어보면, 형변환 하지 않고 비교. ∴ false
+
+
+
+
+
+    </script>
+    <hr>
+    <p>
+        <input id="numInput" value="22" type="number">
+    </p>
+    <script>
+        //numInput 자료형 (. 참조연산자로 필드 접근)
+        console.log(numInput.value)
+        console.log(numInput.id)
+        console.log(numInput.type)
+        //numInput.type="text" //이렇게 제어할 수 있는게 js속성
+        //numInput.readOnly=true; //타이핑 홀드
+        let num=numInput.value;
+        console.log(typeof num) //number 아니고 string
+
+        if(num<30){ //소괄호가 true면 실행되는 조건문
+            console.log("청년")
+        }
+    </script>
+</body>
+</html>

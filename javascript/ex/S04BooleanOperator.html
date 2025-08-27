@@ -19,7 +19,8 @@
     <section>
         <h3>Truthy / Falsy : 참과 거짓으로 취급되는 데이터</h3>
         <ul>
-            <li>Falsy: <code>false</code>, <code>0</code>, <code>-0</code>, <code>0n</code>, <code>""</code>(빈 문자열), <code>null</code>, <code>undefined</code>, <code>NaN</code></li>
+            <li>Falsy: <code>false</code>, <code>0</code>, <code>-0</code>, <code>0n<!--BigInt타입. n이 붙은 숫자 리터럴 표기. 산술 연산할 때 일반 숫자와 섞어서 사용 x--></code>,
+                        <code>""</code>(빈 문자열), <code>null</code>, <code>undefined</code>, <code>NaN</code></li>
             <li>Truthy: 위 8가지를 제외한 모든 값 (예: <code>"0"</code>, <code>"false"</code>, <code>[]</code>, <code>{}</code>, <code>function(){}</code>)</li>
             <li>주의: 빈 배열 <code>[]</code>과 빈 객체 <code>{}</code>는 Truthy</li>
         </ul>
@@ -97,96 +98,96 @@
         <ul>
             <li>
                 다음의 출력 결과를 쓰시오.
-                <pre><code>console.log(Boolean("0"));
-console.log(Boolean([]));
-console.log(Boolean(""));</code></pre>
+                <pre><code>console.log(Boolean("0")); /true
+                            console.log(Boolean([])); true
+                            console.log(Boolean("")); false </code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오.
-                <pre><code>console.log("Apple" &lt; "Banana");
-console.log("10" &lt; 2);</code></pre>
+                <pre><code>console.log("Apple" &lt; "Banana"); /true
+                            console.log("10" &lt; 2); /false </code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오.
-                <pre><code>console.log(0 == false);
-console.log(0 === false);
-console.log("0" == false);</code></pre>
+                <pre><code>console.log(0 == false); true
+                            console.log(0 === false); false
+                            console.log("0" == false); /true</code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오. (단락 평가 주의)
-                <pre><code>console.log("" || "fallback");
-console.log("hi" || 0);
-console.log(0 && "hello");
-console.log(1 && "hello");</code></pre>
+                <pre><code>console.log("" || "fallback"); fallback
+                            console.log("hi" || 0); hi
+                            console.log(0 && "hello"); hello
+                            console.log(1 && "hello"); hello</code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오. (동등/일치)
-                <pre><code>console.log(null == undefined);
-console.log(null === undefined);</code></pre>
+                <pre><code>console.log(null == undefined); true
+                            console.log(null === undefined); false</code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오. (NaN 비교 주의)
-                <pre><code>console.log(NaN === NaN);
-console.log(Number.isNaN(NaN));
-console.log(Number.isNaN("NaN"));</code></pre>
+                <pre><code>console.log(NaN === NaN); false
+                            console.log(Number.isNaN(NaN)); /true
+                            console.log(Number.isNaN("NaN")); false </code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오. (객체 비교)
                 <pre><code>const a = { x: 1 };
-const b = { x: 1 };
-const c = a;
-console.log(a === b);
-console.log(a === c);</code></pre>
+                            const b = { x: 1 };
+                            const c = a;
+                            console.log(a === b); /false
+                            console.log(a === c); true </code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오. (배열도 객체)
-                <pre><code>console.log([1,2] === [1,2]);
-const arr = [1,2];
-console.log(arr === arr);</code></pre>
+                <pre><code>console.log([1,2] === [1,2]); false
+                            const arr = [1,2];
+                            console.log(arr === arr); /true </code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오. (동등 비교 특이 케이스)
-                <pre><code>console.log([] == "");
-console.log("" == 0);
-console.log([] == 0);</code></pre>
+                <pre><code>console.log([] == ""); /true
+                            console.log("" == 0); true
+                            console.log([] == 0); /true </code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오. (부동소수점)
-                <pre><code>console.log(0.1 + 0.2 === 0.3);
-console.log(Math.abs((0.1 + 0.2) - 0.3) &lt; Number.EPSILON);</code></pre>
+                <pre><code>console.log(0.1 + 0.2 === 0.3); false
+                            console.log(Math.abs((0.1 + 0.2) - 0.3) &lt; Number.EPSILON); true</code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오. (부정 연산자)
-                <pre><code>console.log(![]);
-console.log(!!"false");</code></pre>
+                <pre><code>console.log(![]); false
+                            console.log(!!"false"); true</code></pre>
             </li>
 
 
             <li>
                 다음의 출력 결과를 쓰시오. (논리 연산자는 피연산자 자체를 반환)
-                <pre><code>console.log("A" &amp;&amp; "B");
-console.log(null || 0 || "C");
-console.log(undefined &amp;&amp; "D");</code></pre>
+                <pre><code>console.log("A" &amp;&amp; "B"); B
+                            console.log(null || 0 || "C"); C
+                            console.log(undefined &amp;&amp; "D"); undefined </code></pre>
             </li>
         </ul>
     </section>

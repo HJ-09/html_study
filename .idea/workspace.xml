@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/L03Const.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L04Scope.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L05Var.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L06Operator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S02LetContVarScope.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S03NumberOperator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S04BooleanOperator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S05FloatData.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L07Review.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L08BooleanOperator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex/S19BackgroundAndGradient.html" beforeDir="false" afterPath="$PROJECT_DIR$/ex/S19BackgroundAndGradient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/L02VariableAndData.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/L02VariableAndData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/ex/S04BooleanOperator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/ex/S04BooleanOperator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/ex/S05FloatData.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/ex/S05FloatData.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +65,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\javascript\ex" />
-      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study" />
+      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\ex" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src\img" />
     </key>
@@ -128,11 +122,23 @@
       <workItem from="1755563386338" duration="11753000" />
       <workItem from="1755736059294" duration="15634000" />
       <workItem from="1756081653352" duration="17278000" />
-      <workItem from="1756168359972" duration="17431000" />
+      <workItem from="1756168359972" duration="18412000" />
+      <workItem from="1756254684722" duration="15971000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
