@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>문자열 데이터</title>
+</head>
+<body>
+    <h1>문자열 데이터</h1>
+    <p id="userName"></p>
+
+    <script>
+        let str="안녕"; //큰 따옴표
+        console.log(str);
+        str='잘가'; //작은 따옴표
+        console.log(str)
+        str=`자바스크립트`; //백틱
+        console.log(str)
+
+        //str="안녕
+        //    헤지"; //큰 따옴표, 작은 따옴표는 띄어쓰기나 라인개행 x
+        //console.log(str);
+        str=`안녕
+            헤지`; //백틱은 가능~
+        console.log(str);
+        str=    `<b>
+                    헤지스
+                </b>`
+
+        let name="주헌";
+        str=`<b>
+                ${name}
+            </b>`
+
+        userName.innerHTML=str;
+
+        console.log("name",name);
+        console.log("name.length",name.length);
+        console.log(name[0]);
+        console.log(name[1]);
+
+        //문자열을 순서와 길이가 있는 데이터이다..!
+
+        //문자열의 자동형변환//
+        //+ 수학적 더하기연산 ≠ + 문자열 더하기연산(concat)
+        console.log(1+1); //2
+        console.log('1'+'1') //11
+        console.log(1+'1'); //11
+        //└─ 숫자가 문자열로 형변환(concat)
+        console.log(11*11); //121
+        console.log('11'*'11'); //121
+        console.log('11'/'11'); //1
+        console.log('12'%'5'); //2
+        console.log('2'**'3'); //8
+        //└─ 더하기를 제외한 수학적 연산은 문자열이 숫자로 형변환
+        let a="11";
+        console.log(++a); //12
+        a='11'; //전위 마이너스 결과 도출하려고 리셋한거임. 큰 의미x
+        console.log(--a); //10
+
+
+        //비교연산//
+        console.log(11==11); //true
+        console.log(11=="11"); //true. "11"이 숫자로 형변환 되어서 동등비교.
+        console.log(11>"10") //true
+
+        //문자열끼리 비교 가능..?!//
+        console.log("11"<"20"); //true
+        //동등비교는 크기를 비교하는 것이 아니기 때문에 굳이 숫자로 형변환x
+        console.log("11"=="20"); //false
+
+        //수로 형변환 되지 않는 문자열간의 크기 비교//
+        console.log("a"<"b")  //true
+        console.log("azz"<"bzz") //true
+        //문자열에서 맨 앞의 문자의 인코딩 번호를 비교. 순서대로 비교.
+        console.log("Apple"<"Banana") //true
+
+        //하나는 숫자, 하나는 수로 형변환 되지 않는 문자열 비교//
+        console.log(11<"20"); //11<20 ⇒ true
+        console.log(11<"안녕"); //11<Number("안녕") ⇒ false
+        console.log(NaN>0); //false
+        console.log(NaN==NaN); //false. 자신도 동등비교x
+
+        //NaN//
+        //Number.isNaN(NaN) ⇒ 문자열을 형변환 하고나서 NaN인지 확인
+        //isNaN(NaN가 될 문자열) ⇒ 문자열이 Number가 될 수 없는지 확인
+
+        console.log(isNaN("하이")); //true
+        console.log(isNaN("19")); //false
+
+        console.log(Number.isNaN("바이")); //false
+        console.log(Number.isNaN(+"바이")); //true
+        console.log(Number.isNaN(NaN)); //true. why? NaN은 Number로 취급.
+
+        //문자열을 수로 형변환하는 함수//
+        //Number
+        a="12.3";
+        console.log(Number(a)); //12.3
+        console.log(Number.parseInt(a)); //12. 정수로 형변환
+        console.log(Math.trunc(12.3)); //12. 소수점 버리기
+        //console.log(a.parseInt()) //⇒ a가 문자열로 되어있어서 parseInt로 형변환x
+        console.log(Number.parseFloat(a)); //12.3. 실수로 형변환
+        //문자가 맨 앞에 포함된 문자열
+        a="a12.3";
+        console.log(Number(a)); //NaN
+        console.log(Number.parseInt(a)); //NaN
+        console.log(Number.parseFloat(a)); //NaN
+        //문자가 맨 뒤에 있는 경우
+        a="12.3rem";
+        console.log(Number(a)); //NaN
+        console.log(Number.parseInt(a)); //12
+        console.log(Number.parseFloat(a)); //12.3
+
+
+    </script>
+
+    <p>
+        <label for="userAge">나이</label>
+        <input type="text" id="userAge" value="0">
+    </p>
+    <p>유저는 <b id="agePrint"> </b>입니다.</p>
+    <script>
+        //input 입력하고 마우스로 밖으로 빠져나옴 ⇒ blur
+        //input 입력 ⇒ input
+        //input 입력하고 blur ⇒ change
+        userAge.onchange=function () {
+            console.log(Math.trunc((userAge.value)/10));
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

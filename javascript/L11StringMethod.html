@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>문자열의 유용한 메서드</title>
+</head>
+<body>
+    <h1>문자열의 유용한 메서드</h1>
+    <script>
+    //검색 메서드//
+    let str="경민 안녕!"
+    console.log(str[0],str[1],str[2]); //경 민
+    console.log(str.charAt(1)); //민
+    console.log(str.charCodeAt(1)); //48124 ⇒ UTF-16에서 '민'의 코드
+    console.log("A".charCodeAt(0)); //65
+    console.log("a".charCodeAt(0)) //97
+
+    str="abcdefg";
+    console.log(str.indexOf("bc")) //1
+    console.log(str.indexOf("f")) //5
+    console.log(str.indexOf("h")) //-1 ⇒ 찾는 문자가 없을 때
+    console.log(str.indexOf("c",3)); //-1 ⇒ [3]번째부터 c를 찾았을 때 c가 있는지. 없어서 -1임. c는 [2]번째
+    console.log(str.indexOf("c",1)); //2
+
+    console.log(str.includes("cd")) //true
+    console.log(str.includes("dc")) //false
+    console.log(str.includes("c",1)) //true
+    console.log(str.includes("c",3)) //false
+
+    console.log(str.lastIndexOf("f")); //5. 뒤에 있는거 찾아서 번호 알려줌.
+
+    ///match, matchAll ⇒ 정규표현식(아직 안 배워서 나중에 알랴줌)
+
+    //추출 메서드//
+    //substring,slice,substr(얘는 잘 안 씀)
+    console.log(str.substring(3,5)); //de
+    console.log(str.substring(3)); //defg
+    console.log(str.substring(1)); //bcdefg
+
+    console.log(str.slice(3)); //defg
+    console.log(str.slice(-3, -1)); //ef //slice는 (-) 가능. 뒤에서부터 자르는 것.
+
+    //변환 메서드(바꾼 데이터를 변환)//
+    console.log(str.toUpperCase()); //ABCDEFG ⇒ 바꾼 데이터만 추출. 바꾸지 않음.
+    console.log(str); //abcdefg ⇒ 불변데이터는 변하지 x
+
+    str="HIJKL";
+    console.log(str.toLowerCase()) //hijkl
+    str="헤지";
+    console.log(str.toLowerCase()) //헤지
+    // ⇒ upper, lower 는 영어만
+    str=`
+    헤지`;
+    console.log(str.toUpperCase());
+    console.log(str.trim()); //⇒ 공백삭제
+
+    str="하이";
+    console.log(str.padStart(6,'0')); //6자리로 나타내줘. 앞자리 공백은 0으로!
+    console.log(str.padEnd(4,'3')); //4자리로 나타내줘. 뒷자리 공백은 3으로!
+
+    //결합, 분할, 반복 메서드//
+    console.log(str+" "+"바이");
+    console.log(`"${str}"라고 인사하기`);
+    console.log(str.concat('! ', "반가워"));
+
+    str="010-1234-5678";
+    console.log(str.split('-')); //(3) ['010', '1234', '5678']
+    console.log(str.split("")); //(13) ['0', '1', '0', '-', '1', '2', '3', '4', '-', '5', '6', '7', '8']
+
+    str="js";
+    console.log(str.repeat(3)); //jsjsjs
+
+    //교체 메서드//
+    //replace, replaceAll
+    str="책상 의자 모니터";
+
+    console.log(str.replace("의자","가방")); //책상 가방 모니터 ⇒ 바뀐 데이터만 나옴.
+    console.log(str); //책상 의자 모니터 ⇒ 바뀌지 않음.
+
+    str="책상 의자 의자 모니터";
+    console.log(str.replace("의자","가방")); //책상 가방 의자 모니터 ⇒ 얘는 1개만 바꿈
+    console.log(str.replaceAll("의자","가방")); //책상 가방 가방 모니터 ⇒ 전부 바꾸기
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
