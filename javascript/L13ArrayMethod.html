@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배열 Array의 유용한 함수들</title>
+</head>
+<body>
+    <h1>배열 Array의 유용한 함수들</h1>
+
+    <script>
+        //추가 제거
+        //push, pop, shift, unshift
+        const arr=[1,2,3];
+        //arr[3]=4; //배열 길이 알 때
+        arr[arr.length]=4; //배열 길이 모를 때
+        console.log(arr);
+        arr.push(50);
+        console.log(arr); //
+        console.log(arr.pop(),arr); //50 (4) [1, 2, 3, 4]
+        //끝에 배열 추가=push, 끝에 배열 분리=pop
+
+        console.log(arr.shift(),arr); //1 (3) [2, 3, 4] //shift는 앞에 배열 분리
+
+        //unshift ⇔ push
+        arr.unshift(1); //unshift는 앞에 추가
+        console.log(arr); //[1, 2, 3, 4]
+
+        //근데 shift, unshift는 사용 권장 x
+        //왜냐, 인덱스 이동이 필요해서 오래걸림.
+
+        //delete: property (진짜) 지우는 연산자
+        //배열을 지우면 empty..!
+        delete arr[1];
+        console.log(arr); //[1, empty, 3, 4]
+
+        //splice(시작, 삭제할 숫자, [삽입할 배열])
+        arr[1]=2;
+        console.log(arr); //원상복구시킴
+        console.log(arr.splice(1,1)); //[2]
+        console.log(arr.splice(1,2,"2","3"));
+        // console.log(arr.splice(1,2,["2","3"]));
+        console.log(arr); //[1,3,4]
+
+        //splice(start, count, ...args)
+        //splice(start, end)
+        const strArr=[..."12345678"];
+        console.log(strArr.slice(2,5)); //[2]부터 [5]앞까지 ⇒ ['3', '4', '5']
+
+        console.log([1,2,3].concat([4,5,6])); //[1, 2, 3, 4, 5, 6]
+        console.log([...[1,2,3],...[4,5,6]]); //[1, 2, 3, 4, 5, 6]
+        console.log([1,2,3]+[4,5,6]); //1,2,34,5,6 ⇒ 배열은 더하기 안댐. 문자열로 형변환 후 더해야함.
+
+        //indexOf, lastIndexOf, includes
+        const chars=[..."사가나다라마바사"];
+        console.log(chars); //['사', '가', '나', '다', '라', '마', '바', '사']
+        console.log(chars.indexOf('라')); //4
+        console.log(chars.indexOf('자')); //-1
+        console.log(chars.indexOf('사')); //0
+        console.log(chars.lastIndexOf('사')); //7
+        //문자열은 기본형이라 불변데이터, 배열은 자료형임...... 띄용
+        console.log(chars.includes('마')); //true
+        console.log(chars.includes('타')); //false
+
+        //배열의 반복문 관련 함수는 반복문 배우고, iterator 배우고 다시 할거임//
+
+        //sort 정렬
+        const nums2=[99, -100, 1, 50, 25];
+        nums2.sort();
+        console.log(nums2); //[-100, 1, 25, 50, 99] 오름차순 정렬(어센딩 ASC)
+        nums2.sort((a,b)=>a-b); //얘도 오름차순 정렬
+        console.log(nums2); //[-100, 1, 25, 50, 99]
+        nums2.sort((a,b)=>b-a);
+        console.log(nums2); //[99, 50, 25, 1, -100] 내림차순 정렬(디센딩 DESC) == reverse 써도 댐
+
+        //Array.isArray()
+        let obj='';
+        console.log(typeof obj); //string
+        obj=13;
+        console.log(typeof obj); //number
+        obj=[]; //자료형
+        console.log(typeof obj); //object
+        console.log(Array.isArray(obj)); //true
+        console.log(Array.isArray('obj')); //false
+        console.log(Array.isArray(14)); //false
+        console.log(Array.isArray(document.querySelectorAll("div"))); //false
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
