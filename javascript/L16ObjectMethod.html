@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Object의 유용한 메서드</title>
+</head>
+<body>
+    <h1>Object의 유용한 메서드</h1>
+
+    <script>
+        let obj={a:10, b:20, c:30, 777:'행운'}
+        console.log(Object.keys(obj)); //['777', 'a', 'b', 'c']
+        //필드를 수로 작성해도 문자열 취급
+        //자바 객체는 필드만 물어보는 것 불가능
+            /*
+            class User{
+                String name="";
+                int age=39;
+            }
+
+            User u=new User();
+            =={name:'', age:39}; 절대 제공하지 않음.
+
+            Map map=new Map();
+            map.put("name","경민");
+            map.put("age",39);
+            {"name":"경민", "age":39}
+            map.keys()
+
+            js의 Object는 jv의 Map과 유사
+            */
+
+        console.log(Object.values(obj)); //['행운', 10, 20, 30]
+
+        //Entry Type [[key, value], [key, value], [key, value]]
+        console.log(Object.entries(obj)); //[Array(2), Array(2), Array(2), Array(2)]
+        /*
+        0:(2) ['777', '행운']
+        1:(2) ['a', 10]
+        2:(2) ['b', 20]
+        3:(2) ['c', 30]
+        length:4
+        */
+
+        //key가 있는지 확인
+        console.log(obj.d); // undefined
+        console.log(Object.hasOwn(obj,'a')); //true
+        console.log(Object.hasOwn(obj,'b')); //true
+        console.log(Object.hasOwn(obj,'777')); //true
+        console.log(Object.hasOwn(obj,'d')); //false
+
+        //in 연산자(hasOwn 보다 더 많이 사용)
+        console.log("a" in obj); //true
+        console.log("777" in obj); //true
+        console.log("d" in obj); //false
+
+        //seal(봉인) ⇒ 추가·삭제 불가. 변경은 가능
+        Object.seal(obj);
+        obj.a=100; //변경
+        console.log(obj); //{777: '행운', a: 100, b: 20, c: 30} ⇒ a 변경 o
+        obj.d=40;
+        console.log(obj); //{777: '행운', a: 100, b: 20, c: 30} ⇒ d 추가 x
+        delete obj["777"];
+        console.log(obj); //{777: '행운', a: 100, b: 20, c: 30} ⇒ 777 삭제 x
+
+        //freeze: 동결. (seal+수정불가) ⇒ 근데 잘 안 씀..
+        //assign: 객체병합. 얘도 잘 안 씀. 스프레드 문법 더 많이 씀
+        let a={a:1};
+        let b={b:2};
+        // Object.assign(a,b);
+        // console.log(a); //{a: 1, b: 2} ⇒ a가 바뀐거임..!
+        let c=Object.assign({},a,b); // 앞에 빈 객체{}에 a와 b를 더하자! a와 b는 바뀌지 않음.
+        console.log(c)
+
+
+
+
+        //create: 프로토타입 배우고나서..^^!
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
