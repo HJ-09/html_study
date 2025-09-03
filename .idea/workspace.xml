@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/L16ObjectMethod.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L17IfSwitch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L18ForWhile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S10IfElseSwitch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S11ForWhile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L19ThisBinding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L20BindFunction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L21ArrowFunction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/ex/S08Function.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/ex/S12ThisBinding.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/L16ObjectType.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/L15ObjectType.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +129,8 @@
       <workItem from="1756427822077" duration="15704000" />
       <workItem from="1756686884290" duration="10198000" />
       <workItem from="1756772597640" duration="11658000" />
-      <workItem from="1756803727555" duration="621000" />
+      <workItem from="1756803727555" duration="1238000" />
+      <workItem from="1756859982024" duration="9589000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>함수가 호출하는 this를 찾아보자</title>
+</head>
+<body>
+    <h1>함수가 호출하는 this를 찾아보자</h1>
+    <h2>(this binding)</h2>
+    <p id="pElement">this는 함수(function)를 호출하는 객체입니다.</p>
+    <hr>
+    <p id="clockEx"></p>
+    <script>
+        //1. script를 실행하는 객체 ⇒ (렌더트리를 렌더링 하다가)브라우저(window 객체)가 실행
+        function a() {
+            console.log("나는 함수 a 입니다.", this);
+        }
+        a(); //Window.a(); ⇒ this가 가리키는 것
+        //전역을 window라고도 부름.
+        //console.log(pElement);
+        pElement.onclick=a; //pElement에 마우스로 클릭할 때 a가 실행되어라.
+        // ⇒ 이벤트인 onclick을 a함수로 재정의한다.(콜백함수)
+
+        //function(){}이 this를 어떻게 binding 되는지.. ()=>{} 사용하면 안됨!//
+        function User(name, age) {
+            this.name=name;
+            this.age=age;
+            this.info=function () {
+                console.log(`나는 ${this.name}(${this.age})입니다.`)
+            }
+        }
+        let user=new User("헤지",30);
+        console.log(user);
+        user.info(); //나는 헤지(30)입니다.
+
+        //js는 함수형 언어이기 때문에 함수만 따로 참조 가능//
+        let userInfo=user.info;
+        userInfo(); //나는 (undefined)입니다.
+        user={name:"주헌",age:31,info:userInfo};
+        user.info(); //나는 주헌(31)입니다.
+
+        //비동기함수(멀티스레드로 동작)//
+        //window.setInterval(function(){},밀리초)
+        //setInterval: 콜백함수를 밀리초 주기로 반복실행
+        //window.setTimeout(function(){},밀리초)
+        //setTimeout: 콜백함수를 밀리초 뒤에 실햄
+
+        //alert: 경고창
+        // setTimeout(function () {
+        //     alert('경고')
+        // },2000); //2초 뒤에 경고창 뜨기
+        setInterval(function () {
+            //console.log(Date.now());
+            //console.log(new Date());
+            clockEx.innerText=new Date();
+        },1000);
+
+        let obj={
+            a:10,
+            b:20,
+            increment:function () {
+                this.a++;
+                console.log(this.a); //11
+                setTimeout(function () {
+                    this.a++; //window가 호출하는거여서 a=10이 아님.. this==window
+                    console.log(this.a); //NaN
+                },2000);
+            }
+        }
+        obj.increment(); //this==obj
+        console.log(obj);
+
+        //bind(객체), call(객체)이라는 함수가 잇듬. 둘 다 this를 바꾸는(객체로 고정) 함수임.
+        //bind: this를 객체로 하는 새로운 함수를 반환한다(만든다).
+        //call: 함수가 실행되는 순간에 this를 객체로 바꾼다. (콜백함수에 적합하지 x)
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

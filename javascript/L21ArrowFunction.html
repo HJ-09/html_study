@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>화살표 함수와 this 캡처</title>
+</head>
+<body>
+    <h1>화살표 함수와 this 캡처</h1>
+    <p>function 함수는 함수를 실행하는 기준으로 this 발행 (..?)</p>
+    <p>그런데, ()=>{} 함수(화살표함수)는 함수가 선언된 type의 this가 this임. (자바랑 똑같음)</p>
+    <script>
+        //생성자함수, class
+        function User(name, age) {
+            this.name=name;
+            this.age=age;
+            this.info=function(){ //이 함수의 this는 내가 어디있는지가 아니라, 나를 실행하는 객체가 중요.
+                console.log(`나는 ${this.name}입니다. info`)
+            }
+            this.arrowInfo=()=>{ //이 함수의 this는 나를 실행하는 객체가 중요한게 아니라, 내가 처음에 어디에 있었는지가 중요.
+                console.log(`나는 ${this.name}입니다. arrowInfo`)
+            }
+        }
+        let user=new User('동윤', 32);
+        console.log(user);
+        user.info(); //나는 동윤입니다.
+        user.arrowInfo(); //나는 동윤입니다.
+
+        let userInfo=user.info;
+        userInfo(); //undefined(나는 입니다) 상태. why? window가 객체여서.
+
+        let arrowInfo=user.arrowInfo;
+        arrowInfo(); //window객체가 실행해도 arrow 함수는 처음 캡처(바인딩)된 함수를 바꾸지 않음. ⇒ 나는 동윤입니다.
+
+
+        //★ 화살표함수에서 this를 참조할 때는 꼭 타입 안에서 명시! ★//
+        //전역 == window
+        let sum=()=>{
+            console.log(this.a+this.b);
+        }
+        sum(); //NaN
+
+        let obj={a:10, b:20, sum:sum};
+        obj.sum(); //NaN ⇒ 처음 캡처한 것이 window 객체이기 때문에 30이 나오지 않음.
+
+        function Calc(a,b) {
+            this.a=a;
+            this.b=b;
+            this.sum=function () { //날 실행하는 객체가 this가 됨.
+                setTimeout(function (){
+                    console.log(this.a+this.b, `function`);
+                }/*.bind(this)*/,1000); //.bind(this) 를 쓰면 Calc의 this를 참조함. 강제 바인딩
+            }
+            this.arrowSum=function(){ //가장 가까운 타입이 this가 됨.
+                setTimeout(()=>{
+                    console.log(this.a+this.b, `()=>{}`);
+                },1000);
+            }
+        }
+        const calc=new Calc(10,20);
+        calc.sum(); //NaN 'function'
+        calc.arrowSum(); //30 '()=>{}'
+
+
+        class Customer{
+            name;
+            constructor(name) {
+                this.name=name;
+            }
+            call(){
+                setTimeout(function () {
+                    console.log(`안녕~ 나는 ${this.name}이야`);
+                },1000);
+            }
+            callArrow=function () {
+                setTimeout(()=>{
+                    console.log(`반가워, 나는 ${this.name}이야`);
+                },2000);
+            }
+        }
+        let custom=new Customer('동윤');
+        custom.call(); //안녕~ 나는 이야
+        custom.callArrow(); //반가워, 나는 동윤이야
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
