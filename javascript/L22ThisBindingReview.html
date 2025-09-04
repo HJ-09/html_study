@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>this binding 복습</title>
+</head>
+<body>
+    <h1>this binding 복습</h1>
+
+    <script>
+        function sum(a,b) {
+            return a+b;
+        }
+
+        let a=sum(10,20)
+        console.log(a);
+        
+        //타입 내부에 있는 함수(보통 함수를 타입 내부에도 쓸 수 있음.)
+        function Calc(a,b) {
+            this.a=a; //필드(필드를 this로 정의)
+            this.b=b;
+            this.arrowSum=()=>{
+                console.log(this.a+this.b);
+            } //화살표함수는 자바처럼 선언된 위치의 new Calc()가 this임. 고정 this(=this 캡처)!
+
+            this.sum=function () { //함수
+                console.log(this.a+this.b);
+                //sum을 호출할 때 this가 뭐냐..? ⇒ this 바인딩
+                //jv: 함수가 있는 위치가 this (new Calc()가 this)
+                //js: 함수(function)를 호출(실행)하는 객체가 this
+
+                //let user=new User()
+                //user.sum=calc.sum; //함수형 언어만 가능
+                //user.sum(); ⇒ this==new User()
+            } //type은 필드와 함수 두 가지를 적을 수 있음.
+        } //생성자함수
+
+        let calc=new Calc(100,200);
+        console.log(calc); //Calc {a: 100, b: 200}
+        //└─ 필드를 받는 객체를 만드는 함수를 생성자함수라고 함.
+        calc.sum(); //300
+
+        calc=new Calc(1000,2000);
+        console.log(calc); //Calc {a: 20, b: 50}
+        //이렇게 찍어낼 수 있는 것을 자료형 데이터(=type)라고 함.
+        calc.sum(); //3000
+
+        window.a=88; //== var a=88;
+        window.b=99;
+        let windowSum=calc.sum;
+        windowSum(); //NaN ⇒ 왜? 호출한 객체가 window(a,b 값이 없음)여서 ^-^
+        //a,b 값 주어져서 187
+
+        let windowArrowSum=calc.arrowSum;
+        windowArrowSum(); //3000
+
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>
