@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트로 화면을 동적으로 만들기 위해 Dom 탐색을 하자!</title>
+</head>
+<body>
+    <h1>자바스크립트로 화면을 동적으로 만들기 위해 Dom 탐색을 하자!</h1>
+    <!--<script>
+        console.log(ex1)
+    </script>-->
+    <div id="ex1"> <!--div#ex1>h2{Dom 탐색 예제}+ul>li{$$}*6-->
+        <h2>Dom 탐색 예제</h2>
+        <ul>
+            <li>01</li>
+            <li class="bg-blue">02</li>
+            <li id="ex1Li3">03</li>
+            <li class="bg-blue">04</li>
+            <li>05</li>
+            <li>06</li>
+        </ul>
+    </div>
+    <script> //script는 Dom 탐색 할 개체보다 아래에 있어야 생성 후 찾을 수 있음
+        console.log(ex1);
+        let node=document.getElementById("ex1");
+        console.log(node);
+        console.log(node===ex1); //true
+
+        const ex1Li3=document.getElementById('ex1Li3');
+        console.log(ex1Li3);
+        ex1Li3.style.color='grey';
+
+        //복수요소//
+        const liList=document.getElementsByTagName("li");
+        console.log(liList);
+        //liList.style.color='blue'; //안댐. why? 배열엔 스타일이 없움
+        //└─ [li,li,li,...].style.color='blue'
+        for (let li of liList){ //배열(복수의 요소)의 스타일을 바꿀 때는 이렇게 하나씩 분리해서 해야함.
+            console.log(li);
+            li.style.textDecoration='underline';
+        }
+
+        const BgBlueLis=document.getElementsByClassName("bg-blue");
+        console.log(BgBlueLis);
+        for(let li of BgBlueLis){
+            li.style.backgroundColor='lightblue';
+        }
+
+        //querySelector ⇒ 한 개
+        //querySelectorAll ⇒ 복수 (타입: NodeList)
+        //getElementsByName ⇒ 복수 (NodeList)
+
+        //# . > '' + ~ :nth-child(n) ⇒ 찾기 연산자들
+
+        console.log(document.querySelectorAll('#ex1 li.bg-blue')); //NodeList(2) [li.bg-blue, li.bg-blue]
+        console.log(document.querySelectorAll('#ex1 li:nth-child(2)')); //NodeList [li.bg-blue]
+        console.log(document.querySelectorAll('#ex1 li:nth-child(2n-1)')); //NodeList(3) [li, li#ex1Li3, li] //2n 짝수, 2n-1 홀수
+        console.log(document.querySelector('li')); //li
+        //querySelector: 무조건 1개만 반환(복수 선택자 사용시 처음 찾은 것 1개 반환)
+
+        console.log(ex1); //div#ex1
+        console.log(ex1.querySelectorAll('li')); //NodeList(6) [li, li.bg-blue, li#ex1Li3, li.bg-blue, li, li]
+        //모든 element 요소는 돔 탐색 가능
+
+        console.log(ex1Li3);
+        console.log(ex1Li3.previousSibling); //#text ⇒ 라인개행이 텍스트로 바뀐거임(\n=><ul>\n</ul>)
+        console.log(ex1Li3.previousElementSibling); //li.bg-blue
+        console.log(ex1Li3.previousElementSibling.innerText); //02
+        console.log(ex1Li3.nextElementSibling.innerText); //04
+        console.log(ex1Li3.parentElement); //<ul></ul> ⇒ 나의 부모요소. 부모는 무조건 요소다!
+        console.log(ex1Li3.parentElement.children); //HTMLCollection(6) [li, li.bg-blue, li#ex1Li3, li.bg-blue, li, li, ex1Li3: li#ex1Li3]
+        console.log(ex1Li3.parentElement.children[4].innerText); //05
+        console.log(ex1Li3.closest('div')); //div#ex1
+        console.log(ex1Li3.closest('#ex1'));//div#ex1
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

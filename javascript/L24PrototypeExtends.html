@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프로토타입의 상속</title>
+</head>
+<body>
+    <h1>프로토타입의 상속</h1>
+    <p>객체를 상속(권장), 프로토타입의 상속(고급 개발자)</p>
+    <script>
+        //js 상속: __proto__ 객체간의 연결
+
+        let a={score:87, a:()=>{
+                console.log('a 입니다');
+            }};
+        let b={grade:'B', b:()=>{
+                console.log('b 입니다')
+            }};
+        a.__proto__=b; //a가 b를 상속받겠다. (a가 b의 자식)
+        console.log(a.score,a.grade); //87,'B'
+        console.log(a)
+        a.a();
+        a.b();
+
+        //타입의 상속(=프로토타입의 상속)//
+        function User() {
+            this.name='동윤';
+            this.say=()=>{
+                console.log(this.name+'아 안녕~');
+            }
+        }
+
+        function Customer(){
+            this.id='1234';
+        }
+
+        console.log(User.prototype); //{}
+        console.log(Customer.prototype); //{}
+
+        Customer.prototype.__proto__=User.prototype; //Customer의 프로토타입을 User의 프로토타입으로 상속(__proto__)받겠다
+        //근데 이렇게 생각하는건 자바적인 생각.. js는 이렇지 않음.
+        //User.prototype.name='주헌'; //⇒ 사용은 가능하지만 권장하지 않음
+
+        let user=new User();
+        console.log(user); //User {name: '동윤', say: ƒ}
+
+        let customer=new Customer();
+        console.log(customer.name); //undefined why..?
+        //this는 객체의 필드를 정의하는 친구기 때문에 prototype에 없음.
+
+        //객체.필드: data(new 연산자로 만들면)
+        //객체.함수: 현재는 data가 아닌데 호출될 때 data로 생성
+        // ⇒ 함수를 프로토타입에 명시해두면 ㅎㅐ결..! ⇒ 함수상속은 가능
+
+        User.prototype.protoSay=function () {
+            console.log(this.name+'아 프로토 안뇽');
+        }
+
+        user.say(); //동윤아 안녕~
+        user.protoSay(); //동윤아 프로토 안뇽
+        //customer.say(); //customer에 say() 없음
+        customer.protoSay(); //undefined아 프로토 안뇽. customer에 name이 없음.
+
+
+        //class 문법//
+        //자동으로 함수는 prototype에 명시됨. 그래서 상속하면 자동으로 함수가 상속됨.
+        //prototype에 필드를 명시하고, 상속하는건 권장하지 않음ㅠ. 부모 필드를 자식과 결합해버림
+
+        class Animal{
+            name='얼쥐';
+            info(){
+                console.log('info 입니다');
+            }
+        }
+        class Dog extends Animal{
+            tail='꼬리';
+            move(){
+                console.log('move 입니다');
+            }
+        }
+
+        console.log(Animal.prototype); //{info: ƒ}
+        let dog=new Dog();
+        console.log(dog); //상속 전 Dog {tail: '꼬리'} /상속 후 Dog {name: '얼쥐', tail: '꼬리'}
+        dog.move(); //move 입니다 ⇒ dog.__proto__==Dog.prototype /dog 객체가 Dog.prototype을 상속했기 때문에..~
+
+        //Animal 상속 받은 후
+        console.log(dog.name); //얼쥐
+        dog.info(); //info 입니다
+
+
+
+
+
+    </script>
+</body>
+</html>

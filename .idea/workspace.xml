@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/L22ThisBindingReview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L23Prototype.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S13PrototypeEntends.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/study.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L24PrototypeExtends.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L25DomTraversal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/ex/S14DomTraversal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/ex/S10IfElseSwitch.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/ex/S10IfElseSwitch.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,8 @@
       <workItem from="1756772597640" duration="11658000" />
       <workItem from="1756803727555" duration="1238000" />
       <workItem from="1756859982024" duration="10840000" />
-      <workItem from="1756945827580" duration="11436000" />
+      <workItem from="1756945827580" duration="11452000" />
+      <workItem from="1757032818320" duration="12501000" />
     </task>
     <servers />
   </component>
