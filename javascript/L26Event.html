@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>js event</title>
+    <style>
+        .box{
+            width: 5em;
+            height: 5em;
+            border: 2px solid #2c3e50;
+            background-color: #eee;
+            transition: all 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>자바스크립트 이벤트로 요소에서 발생하는 이벤트를 재정의하자</h1>
+
+    <div id="ex1"> <!-- div#ex1>div.box -->
+        <div class="box"></div>
+    </div>
+
+    <script>
+        let box=document.querySelector('#ex1>.box');
+        box.onclick=function (){
+            this.innerText='클릭'; //이 때 this는 box. function은 실행하는 객체를 this로 하니까!
+            this.style.backgroundColor='lightblue';
+        }
+        box.onclick=function(){
+            this.style.borderWidth='.5em';
+        } //바로 정의하면 마지막 코드로 덮어씌워짐
+    </script>
+
+    <hr>
+    <div id="ex2">
+        <div class="box"></div>
+    </div>
+
+    <script>
+        //간접적 이벤트 재정의. 모든 코드가 실행됨.
+        // box.onclick=function (){
+        //          a();
+        //          b();
+        // })
+        box=document.querySelector('#ex2>.box');
+        box.addEventListener('click',function (){
+            this.innerText+='클릭';
+            this.style.backgroundColor='lightpink';
+        }) //a
+        box.addEventListener('click',function (){
+            this.style.borderWidth='.3em';
+        }) //b
+
+    //기존의 이벤트를 모두 1개로 바꾸는 경우(=직접 재정의)가 아니라면, 왠만하면 addEventListener(=간접 재정의) 사용하셍요.~
+    </script>
+
+    <hr>
+    <div id="ex3" style="display: flex"> <!-- div#3ex3>(div.box)*3 -->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script>
+        //복수재정의. 함수 재사용
+
+        let boxs=document.querySelectorAll('#ex3>.box');
+        console.log(boxs); //NodeList(3) [div.box, div.box, div.box]
+        const boxsClickHandler=function (){
+            this.style.borderColor='blue';
+            this.style.borderWidth='.4em';
+            return 0; //얘는 왜 존재..?
+        }
+
+        for (let b of boxs){
+            b.addEventListener("click",boxsClickHandler);
+        }
+    </script>
+
+    <hr>
+    <div style="display:flex" id="ex4"> <!--div[style='display:flex']#ex4>(div.box)*3-->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script>
+        //<element style='' :인라인 스타일 ⇒ js로 찾을 수 있음. js로 주는 스타일
+        //<style> element{} :inter 스타일 ⇒ js로 찾을 수 없음.
+        //요소에 최종적으로 적용된 스타일(getComputedStyle)이 가장 중요! ⇒ window.getComputedStyle(요소)[style]
+
+        boxs=ex4.children;
+        for (let b of boxs){
+            b.addEventListener('click',function (){
+                this.style.borderColor='grey';
+                //let borderWidth=this.style.borderWidth;
+                let borderWidth=window.getComputedStyle(this).borderWidth; //브라우저한테 물어봐야됌
+                console.log(borderWidth);
+                //this.style.borderWidth='1em';
+
+                if (borderWidth==='2px'){
+                    this.style.borderWidth='.7em';
+                }else {
+                    this.style.borderColor='#2c3e50';
+                    this.style.borderWidth='2px';
+                }
+            })
+        }
+    </script>
+
+    <style>
+        /*.selected보다 .box.selected가 우선순위가 높음*/
+        .box.selected{
+            border-width: .5em;
+            border-color: #dd1e7f;
+        }
+    </style>
+
+    <hr>
+    <div style="display:flex" id="ex5">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script>
+        //class를 스타일의 변수처럼 사용 ⇒ 부트스트랩, 트와일라잇, 프론트엔드프레임워크 ...
+        boxs=ex5.children;
+        const selectedHandler=function (){
+            this.classList.toggle('selected'); //class에 selected가 있으면 on 없으면 off
+        }
+        for (let b of boxs){
+            b.addEventListener('click',selectedHandler);
+        }
+    </script>
+
+</body>
+</html>
