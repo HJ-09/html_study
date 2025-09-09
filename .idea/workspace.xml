@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/L26Event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L27NodeInsert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/ex/S15Event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/ex/S16BubblingCapturing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +50,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study",
+    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/javascript/ex",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -129,7 +131,8 @@
       <workItem from="1756859982024" duration="10840000" />
       <workItem from="1756945827580" duration="11452000" />
       <workItem from="1757032818320" duration="12758000" />
-      <workItem from="1757291911630" duration="6884000" />
+      <workItem from="1757291911630" duration="7229000" />
+      <workItem from="1757378105108" duration="8355000" />
     </task>
     <servers />
   </component>
