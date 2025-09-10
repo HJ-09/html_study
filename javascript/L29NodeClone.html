@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>노드 생성 및 클론</title>
+</head>
+<body>
+    <h1>노드 생성 및 클론</h1>
+    <h2>양식 요소</h2>
+    <!--    http://localhost:63342/HTML_study/javascript/signup.jsp?userId=hjkim&userPw=1234    -->
+    <!--
+       1. get: 파라미터로 조회해서 반환
+       2. post: 파라미터를 처리해서 결과를 반환 or 다른 페이지로 이동(redirect)
+       -->
+
+    <form action="signup.jsp">
+        <p><label>아이디 <input type="text" name="userId" value="hjkim"></label></p>
+        <p><label>비밀번호 <input type="text" name="userPw" value="1234"></label></p>
+        <p>
+            <button type="reset">초기화</button>
+            <button type="submit">제출</button>
+        </p>
+    </form>
+
+    <script>
+
+    </script>
+
+    <hr>
+    <h2>일정관리 어플</h2>
+    <ul id="scheduleUl">
+        <li data-time="480"><span>8:00</span> <b>기상</b></li>
+        <li data-time="790"><span>13:00</span> <b>점심</b></li>
+        <li data-time="1110"><span>18:30</span> <b>퇴근</b></li>
+    </ul>
+    <hr>
+    <form action="#" name="schedule">
+        <p>
+            <input type="time" value="09:10" name="time">
+            <input type="text" value="출근" name="str">
+            <button>제출</button>
+        </p>
+    </form>
+    <script>
+        const scheduleUl=document.querySelector('#scheduleUl');
+        const schedule=document.forms['schedule'];
+        const htmlAppend=(e)=>{
+            e.preventDefault();
+            let time=schedule.time.value;
+            let str=schedule.str.value;
+            let html=`<li data-time="1110"><span>${time}</span> <b>${str}</b></li>`
+            scheduleUl.insertAdjacentHTML('beforeend', html);
+        }
+        schedule.onsubmit=htmlAppend;
+
+
+    </script>
+
+</body>
+</html>

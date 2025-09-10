@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>노드 생성 및 추가</title>
+</head>
+<body>
+    <h1>노드 생성 및 추가</h1>
+    <div id="container"></div>
+    <p>
+        <button id="innerHTMLBtn">innerHTML</button>
+        <button id="appendBtn">append</button>
+    </p>
+
+    <script>
+        //노드를 생성한다..?! ⇒ 노드객체를 만드는 것!
+
+        innerHTMLBtn.addEventListener('click', e=>{
+            container.innerHTML=`
+            <table border="1">
+            <tr>
+            <th>a</th><th>b</th><th>c</th>
+            </tr>
+            <tr>
+            <td>01</td><td>02</td><td>03</td>
+            </tr>
+            </table>`;
+        })
+
+        //문자열을 특정 타입으로 변경하는 일은 어렵거나 불가능..~
+
+        appendBtn.addEventListener('click', e=>{
+            //container.append('<b>안녕</b>')
+            const bNode=document.createElement('b');
+            console.log(bNode);
+            const textNode=document.createTextNode('하이');
+            //console.log(textNode);
+            bNode.append(textNode);
+            container.append(bNode);
+        })
+
+    </script>
+
+
+
+
+
+    <hr>
+    <h2>일정 어플 만들기</h2>
+    <li id="scheduleLiEx">
+        <span>일정: </span>
+        <b class="value"></b>
+    </li>
+
+    <ul id="scheduleUl">
+        <li>일정: 양치</li>
+        <li>일정: 출근</li>
+        <li>일정: 퇴근</li>
+    </ul>
+    <form action="#" name="scheduleForm">
+        <!--form.submit: action 양식 제출-->
+        <p>
+            <label for="scheduleInput">일정 : </label>
+            <input type="text" value="저녁 밥" name="schedule" id="scheduleInput">
+        </p>
+        <p>
+            <button type="submit">제출</button>
+        </p>
+    </form>
+    <script>
+        //document.forms: html에 존재하는 모든 양식
+        //scheduleForm==document.forms.scheduleForm
+        const scheduleForm=document.forms['scheduleForm'];
+        const scheduleUl=document.querySelector('#scheduleUl')
+
+        //form.name: 문서 전체에서 유일한 이름(id)
+        //form.name > input.name: 입력요소의 name은 양식 내에서 유일함(양식의 필드취급)
+
+        const creatLi=e=>{
+            e.preventDefault(); //기본동작 삭제 ^^. submit의 기본동작(=다른 페이지로 이동)
+            //scheduleForm.schedule //이게 input요소. ①번째 방법
+            //schedulInput //②번째 방법
+            //e.target.schedule //③번째 방법. 근데 여기서 currentTarget해도 됨. submit이 Form 안에 있어서..
+
+            let value=scheduleForm.schedule.value;
+            console.log(value);
+            //scheduleUl.innerHTML=`<li>${value}</li>`;
+            //scheduleUl.innerHTML+=`<li>${value}</li>`;
+            //scheduleUl.insertAdjacentHTML('beforeend', `<li>${value}</li>`);
+
+            let li=document.createElement('li');
+            let text=document.createTextNode('일정: '+value);
+            li.append(text);
+            scheduleUl.append(li);
+        }
+
+        const liEx=document.querySelector('#scheduleLiEx');
+
+        const cloneLi=(e)=>{
+            e.preventDefault();
+            //object 복제: Node복제에 적합하지 않음.
+            //{...{a:10,
+
+            const cloneLi=liEx.cloneNode(true); //
+            //id 식별자, display:none은 지우고 추가
+            //cloneLi.id='';
+            cloneLi.removeAttribute('id')
+
+            let value=e.target.schedule.value;
+            let txt=document.createTextNode(value);
+            cloneLi.querySelector('.value').append(txt);
+            scheduleUl.append(cloneLi);
+        }
+
+        scheduleForm.addEventListener('submit', cloneLi);
+    </script>
+
+
+</body>
+</html>
