@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>비동기 함수</title>
+</head>
+<body>
+    <script>
+        setTimeout(()=>{
+            let n=0;
+            for (let i=0; i<1000000; i++){
+                n+=i+'';
+            }
+            console.log(n);
+        })
+
+
+    </script>
+
+
+    <h1>비동기 함수에 대해 알아보자</h1>
+    <script>
+        //성능적으로 봤을 때, 멀티스레드(jv)가 이벤트루프(js)보다 좋음(어쩌면 당연)
+        let a=0;
+        console.log(++a);
+        //두 코드가 서로 동기화되어 있기 때문에 a를 증가시킬 수 있음.
+
+        //setTimeout(()=>{}, 밀리초 이후 실행)
+        // setTimeout(()=>{
+        //     alert('1초 후 실행');
+        // },1000);
+
+        setTimeout(()=>{
+            a=100;
+            console.log(a); //a=100
+        },0)
+        console.log(a); //a=1
+        //만약 a가 100이면, setTimeout을 기다린 것이기 때문에 동기화 된거고,
+        //만약 a가 1(++a)이면, setTimeout을 기다리지 않고 실행. 비동기화.
+        //결론: a는 1임. 비동기화(async).
+
+    </script>
+
+    <hr>
+
+    <p id="time"></p>
+    <script>
+        //setTimeout setInterval(()=>{}, 밀리초마다 실행)
+        setInterval(()=>{
+            time.innerText=new Date();
+        },1000)
+
+
+    </script>
+</body>
+</html>

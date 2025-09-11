@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>객체복사</title>
+</head>
+<body>
+    <h1 id="title">객체복사</h1>
+
+    <script>
+    const obj={a:10, b:20, c:{name:'주헌', age:31}};
+
+    const objCopy={...obj}; //복사하는 방법. 스프레드문법 //생성하면서 복사
+    //Object.assign({기존객체},{복사할객체}) //이미 존재하는 객체에 복사
+
+    console.log(obj);
+    console.log(objCopy);
+    console.log(obj===objCopy); //주소가 같냐..? ⇒ nope. why? 복제가 되어서 주소가 다름
+    console.log(obj.c===objCopy.c) //근데 이거는 true?! 깊은복사가 안되었다는 뜻..!
+
+    obj.c.name='현우';
+    console.log(objCopy.c.name); //현우로 바뀜..! 띄용..
+    //얕은 복사의 증명..!
+
+
+    //title.style.backgroundColor='lightgrey';
+    Object.assign(title.style,{
+        color:'lightblue', textDecoration:'underline',
+    });
+
+    </script>
+</body>
+</html>
