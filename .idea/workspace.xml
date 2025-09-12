@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/L30ObjectCopy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L31AsyncFunction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S16BubblingCapturing-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S17InsertNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L32Json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L33Users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L33XmlHttpRequest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/javascript/ex",
+    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -135,7 +134,8 @@
       <workItem from="1757291911630" duration="7229000" />
       <workItem from="1757378105108" duration="8764000" />
       <workItem from="1757464787286" duration="11652000" />
-      <workItem from="1757550822636" duration="7123000" />
+      <workItem from="1757550822636" duration="7141000" />
+      <workItem from="1757637487497" duration="8922000" />
     </task>
     <servers />
   </component>

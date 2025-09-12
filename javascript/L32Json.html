@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>JSON</h1>
+
+    <script>
+        //자료
+        let list=[1,2,3];
+        list=new Array(1,2,3);
+        list=Array.of(1,2,3);
+        console.log(list);
+
+        //Object 자료형(참조형, 인스턴스)
+        let obj={a:10, b:20}; //얘가 객체 선언
+        //객체를 리터럴하게 표기..? 너무 멋진데..!? 통신에 쓴다면...?!!!?
+        //객체의 리터럴표기법을 통신에 사용하도록 문자열로 변경 ⇒ JSON 등장,,!
+        let json='{"a":10, "b":true, "c":"흥민"}'; //객체 선언 아니고, 통신에 사용할 데이터 선언임!
+        //어떤 언어(자바, 파이썬, c, c++, c#, ...)든 객체가 있고, 기본형으로 수, 논리, 문자열 데이터를 가지고 있음.
+
+        //JSON을 도와주는 클래스 JSON
+        obj=JSON.parse(json); //파싱: 문자열을 ((말도 안되게)) 형변환
+        ++obj.a;
+        obj.b=!obj.b;
+        obj.c+='이형';
+        console.log(obj); //{a: 11, b: false, c: '흥민이형'}
+
+
+        //let user={name:'두지형', age:20, isMarried:false};
+        /*let user=new Object();
+        user["name"]='두지형';
+        user.age=21;
+        user.isMarried=false;
+        console.log(user); //{name: '두지형', age: 21, isMarried: false} ⇒ 얘는 브라우저가
+
+        let userStr=JSON.stringify(user);
+        console.log(userStr); //{"name":"두지형","age":21,"isMarried":false} ⇒ 얘는 객체를 문자열로. 문자열은 큰 따옴표*/
+
+        let user=new Object();
+        user["name"]='두지형';
+        user.age=21;
+        user.isMarried=false;
+        user.score=NaN;
+        //user.city; //undefined 상태
+        user.city=undefined; //js에서 undefined 상태를 정의해버림. 모순..!
+        user.country=null;
+        user.say=()=>{
+            console.log('할롱')
+        }
+        user.children=[9,8,7];
+
+        console.log(user); //{name: '두지형', age: 21, isMarried: false, score: NaN, city: undefined, country: null, say: ()=>{console.log('할롱')}, children: (3) [9,8,7]}
+
+        let userStr=JSON.stringify(user);
+        console.log(userStr); //{"name":"두지형","age":21,"isMarried":false, "score":null, "country":null, "children":[9,8,7]}
+        //JSON에서는 함수는 직렬화(문자열 상태로 바꾸는 것)가 불가능하고, 해킹을 할 수도 있고, 함수의 규칙이 언어마다 다르기 때문에 x
+
+
+
+
+
+    </script>
+
+</body>
+</html>

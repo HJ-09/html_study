@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax XmlHttpRequest</title>
+</head>
+<body>
+    <h1>ajax XmlHttpRequest</h1>
+
+    <hr>
+    <h2>유저 정보 AJAX로 불러오기
+        <button id="loadUsersBtn">로드</button>
+    </h2>
+    <table id="users" border="1">
+        <thead> <!--thead>tr>th*3-->
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>score</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        const usersBody=document.querySelector('#users>tbody');
+        const loadUsersBtn=document.querySelector('#loadUsersBtn');
+
+        const loadUsers=function (){
+            //http://localhost:63342/HTML_study/javascript/L33XmlHttpRequest.html
+            //http://localhost:63342/HTML_study/javascript/L33Users.json
+            let url="./L33Users.json" //경로가 같으니까(http:// ~ /javascript) 상대경로로 찾기
+            const request=new XMLHttpRequest(); //비동기식 통신 객체생성
+            request.open("GET", url); //get은 통신방식의 일부. url.. 어쩌고 조쪼고~
+            request.send();
+
+            /*
+            let json=request.responseText; //통신을 성공했을 때 요청한 내역을 받은 것
+            //response: 요청한 내역을 서버가 전달한 것(resource)
+            console.log(json);
+            //└─ 비동기함수가 통신이 완료되는 시점을 알아야 함.
+
+            setTimeout(()=>{
+                console.log(request.responseText);
+            },1000)
+            */
+            //onload, onreadystatechange
+
+            request.onload=function (){
+                //데이터 통신이 완료되는 시점에 동작하는 콜백함수 재정의
+                let status=request.status;
+                if (status===200){ //200은 성공
+                    //console.log(request.responseText);
+
+                    //받아온 정보(json) 객체로 만들기
+                    const users=JSON.parse(request.responseText);
+                    console.log(users);
+
+                    let html="";
+                    for (let user of users){
+                        html+=`<tr>
+                                    <td>${user.id}</td>
+                                    <td>${user.name}</td>
+                                    <td>${user.score}</td>
+                                </tr>`
+                    }
+                    console.log(html);
+                    usersBody.innerHTML=html;
+                }
+            }
+        }
+
+        loadUsersBtn.addEventListener('click', loadUsers);
+
+    </script>
+
+</body>
+</html>
