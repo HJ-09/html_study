@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>내부 반복문의 다양한 종류</title>
+</head>
+<body>
+    <h1>내부 반복문의 다양한 종류 Map, Filter, Reduce</h1>
+    <ul id="numsUl"></ul>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>이름</th>
+            <th>과목</th>
+            <th>score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>경민</td><td>수학</td><td class="score">88</td>
+        </tr>
+        <tr>
+            <td>동윤</td><td>수학</td><td class="score">98</td>
+        </tr>
+        <tr>
+            <td>주헌</td><td>수학</td><td class="score">100</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="2">과목의 총합</td>
+            <td id="scoreSumTd"></td>
+        </tr>
+        <tr>
+            <td colspan="2">과목의 평균</td>
+            <td id="scoreAvgTd"></td>
+        </tr>
+        </tfoot>
+    </table>
+
+    <script>
+
+    let tdScores=document.querySelectorAll(".score") //
+    console.log(tdScores)
+
+    //내부반복문
+
+
+
+
+
+
+    let scoreSum=[...tdScores].reduce((init,td)=>{
+        let score=Number(td.innerText);
+        return init+score; //이렇게만 하면 init 초기값은 숫자가 아닌 td가 옴. 초기값 0 꼭 써줘야함!
+    },0);
+    console.log(scoreSum);
+    scoreSumTd.innerText=scoreSum;
+
+
+    let scoreAvg=[...tdScores].reduce((init,td)=>{
+       return init+Number(td.innerText);
+    },0)/tdScores.length;
+    //scoreAvgTd.innerText=Math.round(scoreAvg); //반올림 불가
+    scoreAvgTd.innerText=scoreAvg.toFixed(2); //2번째 자리까지 문자열 출력할건데 반올림 하겠다.
+
+
+    </script>
+
+
+
+    <!-- 수업 -->
+    <script>
+        ///Array.filter((item,index,arr)=>{return Boolean()})
+        let arr=[1,2,3,'9',4,5,6];
+        let nums=[]; //기본적인 형태.. 무어?
+        arr.forEach((v,i)=>{
+            //console.log(v,i,typeof v)
+            //typeof: 기본형(number,string,symbol,undefined ...)인지 자료형object(여기서는 null)인지 출력해줌
+            if (typeof v==="number"){
+                nums.push(v);
+                //특정 아이템을 제거한 새로운 배열 생성
+            }
+        })
+                console.log(nums);
+
+        let nums2=arr.filter((v,i)=>{
+            return typeof v==="number";
+        })
+        console.log(nums2); //[1,2,3,4,5,6]
+        console.log(arr); //[1,2,3,'9',4,5,6]
+
+
+        ///Array.Map((v,i)=>{return })
+        let arr2=arr.map((v,i)=>{
+            return v*2;
+        }) //==let arr2=arr.map((v,i)=>v*2); 랑 같음.
+        console.log(arr2);
+
+        let lis=arr.map((v,i)=> {
+            let li = document.createElement('li');
+            li.append(v);
+            return li;
+        })
+        console.log(lis)
+        numsUl.append(...lis); //밑에 3줄과 같은 결과값.
+        /*lis.forEach((v)=>{
+            numsUl.append(v)
+        })*/
+
+
+
+        ///Array.reduce()
+        //단일요소 반환 ⇒ reduce, some, evey, find, findIndex
+        //연산 가능: ★ reduce (number,string..)
+        //boolean: some, every
+        //아이템 찾기: find
+        //찾은 아이템의 번호: findIndex
+
+        nums=[10,20,30,40,50];
+        //reduce((item,item2,index,arr)=>연산,초기값) //초기값을 안 주는 것과, 0으로 주는 것은 동일함. (단, 곱셈은 초기값 0으로 두면 결과값도 0임. 당연함(?))
+        let sum=nums.reduce((a,b)=>a+b,0);
+        console.log(sum); //150
+        sum=nums.reduce((a,b)=>a*b,0);
+        console.log(sum); //0
+
+
+        //every: 조건이 모두 같늬?
+        //some: 하나라도 조건이 같은 것이 있늬?
+        nums=[1,2,3,4,5,'6',7,8];
+        const isNum=function (num) {
+            return typeof num==='number';
+        } //= const isNum=(num)=>typeof num==='number'
+
+        //1. some 이용 ⇒ 하나라도 숫자야?
+        let result=nums.some(isNum);
+        console.log(result); //true
+
+        //2. every 이용 ⇒ 모두 숫자야?
+        result=nums.every(isNum);
+        console.log(result); //false
+
+
+        //find: 조건에 맞으면 그 값을 반환
+        //findIndex: 조건에 맞는 index를 반환
+        const isString=(str)=>typeof str==='string';
+
+        //1. find 이용
+        result=nums.find(isString);
+        console.log(result); //6
+
+        //2. findIndex 이용
+        result=nums.findIndex(isString);
+        console.log(result); //5
+
+
+        //sort: 기존 배열을 변경하면서 정렬 (사용시 주의)
+        nums=[11,22,-22,0,100,3];
+        nums.sort();
+        console.log(nums); //[-22, 0, 100, 11, 22, 3]. 왜 순서가 엉망인지? → sort는 기본적으로 문자열 정렬..
+
+        nums.sort((a,b)=>a-b); //오름차순
+        console.log(nums); //[-22, 0, 3, 11, 22, 100]
+        nums.sort((a,b)=>b-a); //내림차순
+        console.log(nums); //[100, 22, 11, 3, 0, -22]
+
+        nums.reverse(); //기존 정렬 뒤집기. 근데 명시적이지 않아서 권장하지는 않음
+        console.log(nums); //[-22, 0, 3, 11, 22, 100]
+
+
+
+    </script>
+
+</body>
+</html>

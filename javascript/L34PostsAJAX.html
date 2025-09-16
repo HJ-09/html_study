@@ -89,10 +89,19 @@
                 if (req.status===200){
                     const comments=JSON.parse(req.responseText);
                     let html="";
-                    for (let comment of comments){
+                    /*for (let comment of comments){
                         const li=commentNode(comment);
                         commentsUl.append(li);
-                    }
+                    }*/
+
+                    const cloneCommentsArr=comments.map((comment)=>{
+                        return commentNode(comment);
+                    })
+                    // cloneCommentsArr.forEach((comment)=>{
+                    //     commentsUl.append(comment);
+                    // })
+                    commentsUl.append(...cloneCommentsArr);
+                    //...는 매개변수로 arguments(...args)를 지원하는 함수만 가능
                 }
             }
         }
@@ -109,13 +118,19 @@
                     let posts=JSON.parse(postsJson);
                     //console.log(posts);
                     //let html="";
-                    for (let post of posts){
+                    /*for (let post of posts){
                         const postNode=clonePostNode(post);
                         console.log(postNode);
                         postsUl.append(postNode);
 
-                    }
+                    }*/
 
+                    const clonePostArr=posts.map((post)=>{
+                        return clonePostNode(post);
+                    })
+                    /*console.log(posts);
+                    console.log(clonePostArr);*/
+                    postsUl.append(...clonePostArr)
                 }
 
             }
