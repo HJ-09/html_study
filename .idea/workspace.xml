@@ -5,10 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/L36MapFilterReduce.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L37ShopAJAX.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L38Promise.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/L39PromiseReq.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/L34PostsAJAX.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/L34PostsAJAX.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L01Hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L01Hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L02BlockInlineElement.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L02BlockInlineElement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L03Attribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L03Attribute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L04Style.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L04Style.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L05Box.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L05Box.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L06Inline.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L06Inline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L07Table.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L07Table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L08Units.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L08Units.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L09Position.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L09Position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L10DisplayNone.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L10DisplayNone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L11MenuBar_with.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L11MenuBar_with.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L12Float.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L12Float.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L13Flex.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L13Flex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L14FlexItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L14FlexItem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L15Grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L15Grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L16Pseudo.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L16Pseudo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L17Transition.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L17Transition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L18Transform.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L18Transform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L19Transform3D.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L19Transform3D.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L20Animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L20Animation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L21Background.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L21Background.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L22Mediaquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L22Mediaquery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L23Bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L23Bootstrap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L26Resource.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/L26Resource.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S01Http.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S01Http.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S02Attribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S02Attribute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S03Style.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S03Style.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S04BoxModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S04BoxModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S05Units.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S05Units.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S06Position.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S06Position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S07DisplayNone.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S07DisplayNone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S08PseudoClasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S08PseudoClasses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S09MenuBarEx.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S09MenuBarEx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S10Float.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S10Float.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S11Flex.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S11Flex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S12Grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S12Grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S13PseudoElements.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S13PseudoElements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S14Transition.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S14Transition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S15Transform.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S15Transform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S16TransitionTransformHW.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S16TransitionTransformHW.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S18Animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S18Animation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S19BackgroundAndGradient.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S19BackgroundAndGradient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S20MediaQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S20MediaQuery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S21FrontendFramework.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S21FrontendFramework.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/S22Bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlCSS/ex/S22Bootstrap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,32 +79,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript 디버그.L01Hello.html.executor": "Run",
-    "JavaScript 디버그.L02BlockInlineElement.html.executor": "Run",
-    "JavaScript 디버그.L10DisplayNone.html.executor": "Run",
-    "JavaScript 디버그.L11MenuBar_with.html.executor": "Run",
-    "JavaScript 디버그.S03Style.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript 디버그.L01Hello.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript 디버그.L02BlockInlineElement.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript 디버그.L10DisplayNone.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript 디버그.L11MenuBar_with.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript 디버그.S03Style.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kosmo/WebstormProjects/HTML_study&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\javascript\ex" />
@@ -68,6 +112,9 @@
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\ex" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\htmlCSS" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript 디버그.L11MenuBar_with.html">
@@ -137,7 +184,10 @@
       <workItem from="1757550822636" duration="7141000" />
       <workItem from="1757637487497" duration="10142000" />
       <workItem from="1757896702874" duration="14326000" />
-      <workItem from="1757983274946" duration="15735000" />
+      <workItem from="1757983274946" duration="15828000" />
+      <workItem from="1758069558046" duration="196000" />
+      <workItem from="1758070002067" duration="11594000" />
+      <workItem from="1758155697561" duration="18672000" />
     </task>
     <servers />
   </component>
