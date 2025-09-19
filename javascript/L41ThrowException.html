@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예외 위임(발생) throw를 사용하자</title>
+</head>
+<body>
+    <h1>예외 위임(발생) throw를 사용하자</h1>
+
+    <script>
+        //예외 발생 시키는 이유? ⇒ try-catch로 처리해! 무.조.건
+
+        //js는 Exception 아니고 Error임
+        /*throw Error('강제 오류 발생 삐용') //Uncaught Error:강제 오류 발생 삐용
+        console.log('제가 보이세요?');*/
+
+        //수만 더하는 sum을 만들엇눈데..! 문자열이 매개변수로 들어왔다..?!
+        /* const sum=(a,b)=>{
+            return a+b;
+        }
+        console.log(sum(9,11)); //20
+        console.log(sum('10',30)); //1030 */
+
+        /*const sum=(a,b)=>{
+            return (+a)+(+b); //==return Number(a)+Number(b);
+        }
+        console.log(sum(9,11)); //20
+        console.log(sum('10',30)); //40 //양의 부호를 붙이면 수로 형변환
+        console.log(sum('삼',17)); //NaN*/
+
+        const sum=(a,b)=>{
+            if (!isNaN(a) && !isNaN(b)){
+                return Number(a)+Number(b);
+            }
+            throw new Error('매개변수는 숫자만 가능합니다.^^');
+        }
+        console.log(sum(9,11)); //20
+        console.log(sum('10',30)); //40
+        //console.log(sum('삼',17)); //Uncaught Error: 매개변수는 숫자만 가능합니다.^^
+
+        try{
+            console.log(sum('삼',17));
+        }catch (err) {
+            console.log(err);
+        } //Error: 매개변수는 숫자만 가능합니다.^^
+
+    </script>
+</body>
+</html>
