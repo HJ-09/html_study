@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/L40Exception.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L41ThrowException.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/L42PromiseCatch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S18ObjectClone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S19AsyncFunction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S20XMLHttpRequest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S22Promise.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S23Fetch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/ex/S24AsyncFunction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L01CreateTable.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L02DML.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S01Data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S02RDBS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S03NoSQL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S04InstallOracle21c.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S05SQL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S06CreateUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S07CreateTable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/javascript/ex",
+    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/oracle/ex",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -65,15 +65,20 @@
     "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "oracle"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\oracle\ex" />
+      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\oracle\oracle21c" />
+      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\oracle" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\javascript\ex" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src\css" />
-      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study" />
-      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src" />
-      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\ex" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\htmlCSS" />
@@ -150,7 +155,8 @@
       <workItem from="1758069558046" duration="196000" />
       <workItem from="1758070002067" duration="11594000" />
       <workItem from="1758155697561" duration="18704000" />
-      <workItem from="1758242382415" duration="13070000" />
+      <workItem from="1758242382415" duration="13592000" />
+      <workItem from="1758589688019" duration="15057000" />
     </task>
     <servers />
   </component>
