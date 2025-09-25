@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost /system" group="@localhost " uuid="668ca971-f340-4b2a-937b-561d998a6da3">
-      <driver-ref>oracle.19</driver-ref>
-      <synchronize>true</synchronize>
-      <auto-commit>false</auto-commit>
-      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
-      <jdbc-url>jdbc:oracle:thin:@//localhost:1521/XEPDB1</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="@localhost/table_user" uuid="38850872-418e-4bcc-9074-77f9f7e862ee">
       <driver-ref>oracle.19</driver-ref>
       <synchronize>true</synchronize>
@@ -17,7 +9,15 @@
       <jdbc-url>jdbc:oracle:thin:@//localhost:1521/XEPDB1</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="@localhost /system2" uuid="62d3caca-565c-43c6-935b-370668562d45">
+    <data-source source="LOCAL" name="@localhost /system" uuid="62d3caca-565c-43c6-935b-370668562d45">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@//localhost:1521/XEPDB1</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="@localhost /scott" uuid="5a1c32e3-ade9-43bd-83ef-80757f0c4b23">
       <driver-ref>oracle.19</driver-ref>
       <synchronize>true</synchronize>
       <auto-commit>false</auto-commit>

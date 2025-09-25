@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L03Constraints.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L05WhereHW.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L06Casting.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L07Function.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L08AggregationFunction.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/self/S10SELF.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/self/S11SELF.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/38850872-418e-4bcc-9074-77f9f7e862ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/38850872-418e-4bcc-9074-77f9f7e862ee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a1c32e3-ade9-43bd-83ef-80757f0c4b23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5a1c32e3-ade9-43bd-83ef-80757f0c4b23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3/storage_v2/_src_/schema/DIP.awgBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3/storage_v2/_src_/schema/SYSTEM.L2avkg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3/storage_v2/_src_/schema/SYSTEM.L2avkg.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,41 +48,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript 디버그.L01Hello.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.L02BlockInlineElement.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.L10DisplayNone.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.L11MenuBar_with.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.S03Style.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kosmo/WebstormProjects/HTML_study&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript 디버그.L01Hello.html.executor": "Run",
+    "JavaScript 디버그.L02BlockInlineElement.html.executor": "Run",
+    "JavaScript 디버그.L10DisplayNone.html.executor": "Run",
+    "JavaScript 디버그.L11MenuBar_with.html.executor": "Run",
+    "JavaScript 디버그.S03Style.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;oracle&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "oracle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\oracle\ex" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\oracle\oracle21c" />
+      <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\oracle\ex" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\oracle" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\javascript\ex" />
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\src\css" />
@@ -81,8 +91,11 @@
       <recent name="C:\Users\kosmo\WebstormProjects\HTML_study\htmlCSS" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript 디버그.L11MenuBar_with.html">
-    <configuration name="L01Hello.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML_study/L01Hello.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="데이터베이스 스크립트.S09SELF.sql">
+    <configuration name="S09SELF.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/oracle/self/S09SELF.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="5a1c32e3-ade9-43bd-83ef-80757f0c4b23" namespace="schema/&quot;SCOTT&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="L02BlockInlineElement.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML_study/L02BlockInlineElement.html" useBuiltInWebServerPort="true">
@@ -99,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="데이터베이스 스크립트.S09SELF.sql" />
         <item itemvalue="JavaScript 디버그.S03Style.html" />
         <item itemvalue="JavaScript 디버그.L11MenuBar_with.html" />
         <item itemvalue="JavaScript 디버그.L10DisplayNone.html" />
         <item itemvalue="JavaScript 디버그.L02BlockInlineElement.html" />
-        <item itemvalue="JavaScript 디버그.L01Hello.html" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +169,8 @@
       <workItem from="1758589688019" duration="16152000" />
       <workItem from="1758673962156" duration="891000" />
       <workItem from="1758674867671" duration="3895000" />
+      <workItem from="1758680236418" duration="14494000" />
+      <workItem from="1758760634483" duration="22857000" />
     </task>
     <servers />
   </component>

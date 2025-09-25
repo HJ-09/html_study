@@ -2,11 +2,16 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/62d3caca-565c-43c6-935b-370668562d45/console.sql" value="62d3caca-565c-43c6-935b-370668562d45" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/668ca971-f340-4b2a-937b-561d998a6da3/console.sql" value="668ca971-f340-4b2a-937b-561d998a6da3" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/668ca971-f340-4b2a-937b-561d998a6da3/console_1.sql" value="668ca971-f340-4b2a-937b-561d998a6da3" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/668ca971-f340-4b2a-937b-561d998a6da3/console_2.sql" value="668ca971-f340-4b2a-937b-561d998a6da3" />
-    <file url="file://$PROJECT_DIR$/oracle/ex/L01CreateTable.sql" value="668ca971-f340-4b2a-937b-561d998a6da3" />
     <file url="file://$PROJECT_DIR$/oracle/ex/L02DML.sql" value="38850872-418e-4bcc-9074-77f9f7e862ee" />
     <file url="file://$PROJECT_DIR$/oracle/ex/L03Constraints.sql" value="38850872-418e-4bcc-9074-77f9f7e862ee" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L04DQLScott.sql" value="5a1c32e3-ade9-43bd-83ef-80757f0c4b23" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L05WhereHW.sql" value="5a1c32e3-ade9-43bd-83ef-80757f0c4b23" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L06Casting.sql" value="5a1c32e3-ade9-43bd-83ef-80757f0c4b23" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L07Function.sql" value="5a1c32e3-ade9-43bd-83ef-80757f0c4b23" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L08AggregationFunction.sql" value="5a1c32e3-ade9-43bd-83ef-80757f0c4b23" />
+    <file url="file://$PROJECT_DIR$/oracle/oracle21c/S09Scott.sql" value="62d3caca-565c-43c6-935b-370668562d45" />
+    <file url="file://$PROJECT_DIR$/oracle/self/S09SELF.sql" value="5a1c32e3-ade9-43bd-83ef-80757f0c4b23" />
+    <file url="file://$PROJECT_DIR$/oracle/self/S10SELF.sql" value="5a1c32e3-ade9-43bd-83ef-80757f0c4b23" />
+    <file url="file://$PROJECT_DIR$/oracle/self/S11SELF.sql" value="5a1c32e3-ade9-43bd-83ef-80757f0c4b23" />
   </component>
 </project>

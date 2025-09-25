@@ -4,5 +4,14 @@
     <file url="file://$PROJECT_DIR$/oracle/ex/L01CreateTable.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/oracle/ex/L02DML.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/oracle/ex/L03Constraints.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L04DQLScott.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L05WhereHW.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L06Casting.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L07Function.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L08AggregationFunction.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/oracle21c/S09Scott.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/self/S09SELF.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/self/S10SELF.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/self/S11SELF.sql" dialect="Oracle" />
   </component>
 </project>
