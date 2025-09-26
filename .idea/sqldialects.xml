@@ -9,9 +9,13 @@
     <file url="file://$PROJECT_DIR$/oracle/ex/L06Casting.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/oracle/ex/L07Function.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/oracle/ex/L08AggregationFunction.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L09Join.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/ex/L10SubQuery.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/oracle/oracle21c/S09Scott.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/oracle/self/S09SELF.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/oracle/self/S10SELF.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/oracle/self/S11SELF.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/self/S13SELF.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/oracle/self/S14SELF.sql" dialect="Oracle" />
   </component>
 </project>

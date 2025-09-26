@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L05WhereHW.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L06Casting.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L07Function.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L08AggregationFunction.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/self/S10SELF.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/self/S11SELF.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a1c32e3-ade9-43bd-83ef-80757f0c4b23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5a1c32e3-ade9-43bd-83ef-80757f0c4b23.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3/storage_v2/_src_/schema/DIP.awgBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3/storage_v2/_src_/schema/SYSTEM.L2avkg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/668ca971-f340-4b2a-937b-561d998a6da3/storage_v2/_src_/schema/SYSTEM.L2avkg.zip" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L09Join.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L10SubQuery.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S08DML.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S09DQL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S10Function.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S11AggregateFunctions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/self/S13SELF.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/self/S14SELF.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -63,7 +57,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study",
+    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/oracle/oracle21c",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -170,7 +164,8 @@
       <workItem from="1758673962156" duration="891000" />
       <workItem from="1758674867671" duration="3895000" />
       <workItem from="1758680236418" duration="14494000" />
-      <workItem from="1758760634483" duration="22857000" />
+      <workItem from="1758760634483" duration="23207000" />
+      <workItem from="1758847136847" duration="23154000" />
     </task>
     <servers />
   </component>
