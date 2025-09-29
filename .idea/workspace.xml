@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L09Join.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L10SubQuery.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S08DML.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S09DQL.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S10Function.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S11AggregateFunctions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/self/S13SELF.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/self/S14SELF.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L11JoinHW.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L12SubQueryHW.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/ex/L13Pagination.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S12OrderBy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S13Join.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S14SubQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S15Paging.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle/self/S15SELF.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -165,7 +165,8 @@
       <workItem from="1758674867671" duration="3895000" />
       <workItem from="1758680236418" duration="14494000" />
       <workItem from="1758760634483" duration="23207000" />
-      <workItem from="1758847136847" duration="23154000" />
+      <workItem from="1758847136847" duration="23789000" />
+      <workItem from="1759106662592" duration="19984000" />
     </task>
     <servers />
   </component>
