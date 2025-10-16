@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0dc34f-6699-4f1e-af94-24701432b566" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L11JoinHW.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L12SubQueryHW.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/ex/L13Pagination.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S12OrderBy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S13Join.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S14SubQuery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/oracle21c/S15Paging.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oracle/self/S15SELF.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,10 +45,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study/oracle/oracle21c",
+    "last_opened_file_path": "C:/Users/kosmo/WebstormProjects/HTML_study",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -117,7 +109,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
       </set>
     </attachedChunks>
   </component>
@@ -166,7 +158,13 @@
       <workItem from="1758680236418" duration="14494000" />
       <workItem from="1758760634483" duration="23207000" />
       <workItem from="1758847136847" duration="23789000" />
-      <workItem from="1759106662592" duration="19984000" />
+      <workItem from="1759106662592" duration="20009000" />
+      <workItem from="1760318565743" duration="12000" />
+      <workItem from="1760412927678" duration="278000" />
+      <workItem from="1760413322139" duration="1432000" />
+      <workItem from="1760489799478" duration="18000" />
+      <workItem from="1760490043440" duration="3534000" />
+      <workItem from="1760575792155" duration="11051000" />
     </task>
     <servers />
   </component>
